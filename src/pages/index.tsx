@@ -3,10 +3,12 @@ import Header from "@/components/head";
 import Link from "next/link";
 import Faq from "@/components/landing/faq";
 import Footer from "@/components/landing/footer";
+import { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const [showInfoModa, setShowInfoModal] = useState(false);
   return (
     <>
       <Header />
@@ -36,6 +38,8 @@ export default function Home() {
                 viewBox="0 0 24 24"
                 fill="#cccccc"
                 className="absolute -right-2 -top-2 h-4 w-4"
+                onMouseEnter={() => setShowInfoModal(true)}
+                onMouseLeave={() => setShowInfoModal(false)}
               >
                 <path
                   fillRule="evenodd"
@@ -45,6 +49,17 @@ export default function Home() {
               </svg>
             </h1>
             <p className="text-2xl font-medium italic">Kigali, Rwanda</p>
+
+            <div
+              className={`rounded-lg absolute left-[105%] w-[300px] top-0 border-[1px] border-gray-100 bg-gray-50 p-4 text-left text-xs text-gray-400 transition-all duration-300 ease-in ${
+                showInfoModa ? "visible opacity-100" : "invisible opacity-0"
+              }`}
+            >
+              A specific date, along with other details will be confirmed and
+              shared with you later before registrations officially open. <br />{" "}
+              <br /> In the meantime refer yourself to the FAQs or ping our
+              support email and will answer all your burning questions
+            </div>
           </div>
 
           <div className="flex max-w-3xl flex-col gap-2">
