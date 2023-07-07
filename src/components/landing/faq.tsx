@@ -124,8 +124,8 @@ export default function Faq() {
     },
   ];
   return (
-    <section className="my-6 flex px-8 flex-col gap-6">
-      <h2 className="text-center text-3xl font-semibold text-gray-700">FAQs</h2>
+    <section className="my-6 flex px-8 max-sm:px-0 flex-col gap-6">
+      <h2 className="text-center text-5xl font-semibold text-gray-700">FAQs</h2>
       <div className="">
         {data.map((fqObj, i) => (
           <OneFaq
@@ -159,9 +159,8 @@ function OneFaq({
       <h2 onClick={() => setOpen(!open)}>
         <button
           type="button"
-          className={`flex w-full items-center justify-between border border-gray-200 p-5 text-left font-medium text-gray-500 transition-all duration-300 ease-in hover:bg-gray-100 ${
-            isFirst && "rounded-t-xl border-b-0"
-          } ${isLast && !open && "rounded-b-xl border-b-[1px]"}`}
+          className={`flex w-full items-center justify-between border border-gray-200 p-5 text-left font-medium text-gray-500 transition-all duration-300 ease-in hover:bg-gray-100 ${isFirst && "rounded-t-xl border-b-0"
+            } ${isLast && !open && "rounded-b-xl border-b-[1px]"}`}
         >
           <span className="flex items-center">
             <svg
@@ -171,9 +170,9 @@ function OneFaq({
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
               ></path>
             </svg>{" "}
             {question}
@@ -188,18 +187,17 @@ function OneFaq({
           >
             <path
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               d="M9 5 5 1 1 5"
             />
           </svg>
         </button>
       </h2>
       <div
-        className={`${
-          open ? height : "h-0"
-        } overflow-hidden transition-all duration-300 ease-in`}
+        className={`${open ? height : "h-0"
+          } overflow-hidden transition-all duration-300 ease-in`}
       >
         {answer}
       </div>
@@ -218,9 +216,8 @@ function Answer({
 }) {
   return (
     <div
-      className={`h-full border border-gray-200 p-5 ${
-        isFirst && "border-b-0"
-      } ${isLast && "border-b-[1px]"}`}
+      className={`h-full border border-gray-200 p-5 overflow-scroll ${isFirst && "border-b-0"
+        } ${isLast && "border-b-[1px] rounded-b-xl"}`}
     >
       {children}
     </div>
