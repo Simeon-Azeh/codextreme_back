@@ -8,14 +8,12 @@ export default class MyDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
           <meta name="theme-color" content="#0xf000" />
-          {/* og meta */}
           <meta property="og:url" content="https://codextreme.infinitloop.io" />
           <meta property="og:type" content="website" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta property="twitter:domain" content="https://codextreme.infinitloop.io" />
           <meta property="twitter:url" content="https://codextreme.infinitloop.io" />
           <meta name="twitter:creator" content="@CodeXtreme" />
-          {/* pwa tags */}
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta
             name="apple-mobile-web-app-status-bar-style"
