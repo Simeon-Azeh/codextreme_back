@@ -3,6 +3,8 @@ import Link from "next/link";
 import Faq from "@/components/landing/faq";
 import Footer from "@/components/landing/footer";
 import { useState } from "react";
+import Image from "next/image";
+import LogoBlack from "@/assets/logo-black.svg";
 
 export default function Home() {
   const [showInfoModa, setShowInfoModal] = useState(false);
@@ -11,8 +13,7 @@ export default function Home() {
       <Head />
       <header className="flex max-sm:flex-col max-sm:justify-center justify-between items-center max-sm:pb-0 py-10 w-[80%] m-auto">
         <Link className="text-4xl font-semibold tracking-widest" href="/">
-          <span className="text-black">Code</span>
-          <span className="text-[#D10000]">Xtreme</span>
+          <Image src={LogoBlack} width={250} alt="logo" />
         </Link>
         <div className="flex max-sm:justify-center justify-end gap-5 max-sm:pt-5 text-lg">
           <button className="">Become a Sponsor</button>

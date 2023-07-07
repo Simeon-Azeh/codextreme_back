@@ -1,17 +1,19 @@
 import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import LogoColWhite from "@/assets/logo-col-white.svg";
 
 export default function Footer() {
   return (
     <footer className="mt-20 shadow bg-black">
       <div className="m-auto w-[80%] p-4 md:py-8">
         <div className="gap-32 sm:gap-20 sm:flex sm:items-start sm:justify-start">
-          <a
+          <Link
             href="https://flowbite.com/"
             className="mb-4 flex items-end whitespace-nowrap text-2xl font-bold tracking-tighter text-white sm:mb-0"
           >
-            <span className="text-5xl text-white">C</span>
-            <span className="-ml-1 text-3xl text-[#D10000]">X</span>
-          </a>
+            <Image src={LogoColWhite} width={100} alt="logo" />
+          </Link>
           <div className="mb-6 flex max-sm:flex-col max-sm:items-start flex-wrap items-center gap-20 sm:gap-10 font-medium text-white sm:mb-0">
             <div className="flex flex-col gap-2">
               <h3 className="mr-4 text-lg font-bold md:mr-6">For Sponsors</h3>
