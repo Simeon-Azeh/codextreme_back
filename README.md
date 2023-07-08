@@ -14,3 +14,4 @@ Welcome to the CodeExtreme Hackathon 2023! This is the repository for the websit
 1. Clone the repository
 2. Run `pnpm install`
 3. Run `pnpm dev`
+
