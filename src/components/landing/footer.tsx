@@ -6,7 +6,7 @@ import LogoColWhite from "@/assets/logo-col-white.svg";
 export default function Footer() {
   return (
     <footer className="mt-20 shadow bg-black">
-      <div className="m-auto w-[80%] p-4 md:py-8">
+      <div className="m-auto w-[80%] pt-10 max-md:py-8 max-md:w-[85%]">
         <div className="gap-32 sm:gap-20 sm:flex sm:items-start sm:justify-start">
           <Link
             href="https://flowbite.com/"
@@ -36,14 +36,14 @@ export default function Footer() {
                 <p className="flex gap-2">
                   Phone:{" "}
                   <a href="#">
-                    +243787104022
+                    +250787104022
                   </a>
                 </p>
 
-                <li className="flex gap-2">
+                <li className="flex gap-2 flex-wrap">
                   Email:{" "}
-                  <a href="#" className="underline">
-                    example@email.com
+                  <a href="mailto:ping@codextreme.infinitloop.io" className="underline">
+                    ping@codextreme.infinitloop.io
                   </a>
                 </li>
               </ul>
@@ -53,7 +53,7 @@ export default function Footer() {
         <p className="mt-10 text-xs text-gray-600 sm:text-center">
           © 2023{" "}
           <a href="https://flowbite.com/" className="hover:underline">
-            CodeExtreme
+            CodeXtreme
           </a>
           . All Rights Reserved.
         </p>

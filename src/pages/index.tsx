@@ -1,3 +1,4 @@
+import React from "react";
 import Head from "@/components/head";
 import Link from "next/link";
 import Faq from "@/components/landing/faq";
@@ -11,11 +12,11 @@ export default function Home() {
   return (
     <>
       <Head />
-      <header className="m-auto flex w-full items-center justify-between py-10 max-sm:flex-col max-sm:justify-center max-sm:pb-0 md:w-[80%]">
-        <Link className="text-4xl font-semibold tracking-widest" href="/">
+      <header className="m-auto flex items-center justify-between py-10 max-md:flex-col max-md:justify-center max-md:pb-0 w-[80%]">
+        <Link className="text-4xl tracking-widest" href="/">
           <Image src={LogoBlack} width={250} alt="logo" />
         </Link>
-        <div className="flex flex-col justify-end gap-2 text-lg underline max-sm:justify-center max-sm:pt-5 md:flex-row md:gap-5">
+        <div className="flex justify-end gap-2 text-lg underline max-sm:justify-center max-sm:flex-col max-md:pt-5 md:gap-5">
           <button className="">Become a Sponsor</button>
           <button>Become a Mentor</button>
         </div>
@@ -83,7 +84,7 @@ export default function Home() {
           </div>
         </section>
         <section className="flex flex-col items-center justify-center">
-          <div className="flex flex-wrap justify-center gap-10 max-sm:gap-5">
+          <div className="flex flex-wrap justify-center gap-10 max-md:gap-5">
             <OneBlock
               title="Learn"
               description={[
@@ -133,14 +134,12 @@ function OneBlock({
 }) {
   return (
     <div
-      className={`flex flex-col items-center justify-center rounded-lg text-center md:rounded-[25px] ${bgColor} h-auto w-[90%] py-6 md:h-[250px] 2xl:w-[325px] md:w-[300px] md:py-0 md:max-sm:w-[300px] ${
-        textColor ?? "text-white"
-      } ${title === "Share" ? "border-[0.5px] border-gray-300" : ""}`}
+      className={`flex flex-col items-center justify-center rounded-lg text-center md:rounded-[25px] ${bgColor} h-auto w-[90%] py-6 md:h-[250px] 2xl:w-[325px] md:w-[300px] md:py-0 md:max-sm:w-[300px] ${textColor ?? "text-white"
+        } ${title === "Share" ? "border-[0.5px] border-gray-300" : ""}`}
     >
       <h2
-        className={`pb-3 text-3xl font-bold ${
-          title === "Share" ? "text-[#D10000]" : ""
-        }`}
+        className={`pb-3 text-3xl font-bold ${title === "Share" ? "text-[#D10000]" : ""
+          }`}
       >
         {title}
       </h2>
