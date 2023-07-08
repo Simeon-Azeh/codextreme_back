@@ -20,7 +20,7 @@ export default function Faq() {
           </p>
         </Answer>
       ),
-      height: "h-24",
+      height: "md:h-24 h-28",
     },
     {
       question: "Why CodeXtreme?",
@@ -51,7 +51,7 @@ export default function Faq() {
           </p>
         </Answer>
       ),
-      height: "h-48",
+      height: "md:h-48 h-[30rem]",
     },
     {
       question: "How much does it cost?",
@@ -76,7 +76,7 @@ export default function Faq() {
           </p>
         </Answer>
       ),
-      height: "h-24",
+      height: "md:h-24 h-48",
     },
     {
       question: "Where and when is the event?",
@@ -89,7 +89,7 @@ export default function Faq() {
           </p>
         </Answer>
       ),
-      height: "h-24",
+      height: "md:h-24 h-42",
     },
     {
       question: "Is there a code of conduct?",

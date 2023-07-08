@@ -11,20 +11,20 @@ export default function Home() {
   return (
     <>
       <Head />
-      <header className="flex max-sm:flex-col max-sm:justify-center justify-between items-center max-sm:pb-0 py-10 w-[80%] m-auto">
+      <header className="m-auto flex w-full items-center justify-between py-10 max-sm:flex-col max-sm:justify-center max-sm:pb-0 md:w-[80%]">
         <Link className="text-4xl font-semibold tracking-widest" href="/">
           <Image src={LogoBlack} width={250} alt="logo" />
         </Link>
-        <div className="flex max-sm:justify-center justify-end gap-5 max-sm:pt-5 text-lg">
+        <div className="flex flex-col justify-end gap-2 text-lg underline max-sm:justify-center max-sm:pt-5 md:flex-row md:gap-5">
           <button className="">Become a Sponsor</button>
           <button>Become a Mentor</button>
         </div>
       </header>
       <main
-        className={`min-h-screen w-[80%] m-auto p-0 font-montserrat`}
+        className={`m-auto min-h-screen w-full px-4 font-montserrat md:w-[80%] md:p-0`}
       >
         <section className="mx-auto flex flex-col items-center text-center text-gray-700">
-          <div className="flex max-w-lg flex-col gap-2 pt-10  pb-10">
+          <div className="flex max-w-lg flex-col gap-2 pb-10  pt-10">
             <div className="flex justify-center">
               <h1
                 data-tooltip-target="tooltip-top"
@@ -34,16 +34,16 @@ export default function Home() {
                 Happening in November 2023
               </h1>
               <div
-                className="relative"
+                className="relative h-max"
                 onMouseEnter={() => setShowInfoModal(true)}
                 onMouseLeave={() => setShowInfoModal(false)}
+                onClick={() => setShowInfoModal(!showInfoModa)}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className="hover:cursor-pointer w-6 h-6 ml-2 text-gray-500"
-
+                  className="ml-2 h-6 w-6 text-gray-500 hover:cursor-pointer"
                 >
                   <path
                     fillRule="evenodd"
@@ -51,22 +51,24 @@ export default function Home() {
                     clipRule="evenodd"
                   />
                 </svg>
-                {showInfoModa && <div
-                  className={`rounded-lg absolute right-0 overflow-scroll w-[300px] top-10 border-[1px] border-gray-100 bg-gray-50 p-4 text-left text-xs text-gray-600 transition-all duration-300 ease-in
-                }`}
-                >
-                  A specific date, along with other details will be confirmed and
-                  shared with you later before registrations officially open. <br />{" "}
-                  <br /> In the meantime refer yourself to the FAQs or ping our
-                  support email and will answer all your burning questions
-                </div>
-                }
+                {showInfoModa && (
+                  <div
+                    className={`} absolute right-0 top-10 w-[300px] overflow-scroll rounded-lg border-[1px] border-gray-100 bg-gray-50 p-4 text-left text-xs text-gray-600 transition-all duration-300
+                ease-in`}
+                  >
+                    A specific date, along with other details will be confirmed
+                    and shared with you later before registrations officially
+                    open. <br /> <br /> In the meantime refer yourself to the
+                    FAQs or ping our support email and will answer all your
+                    burning questions
+                  </div>
+                )}
               </div>
             </div>
             <p className="text-2xl font-medium italic">Kigali, Rwanda</p>
           </div>
 
-          <div className="flex max-w-3xl flex-col gap-2 pb-20 max-sm:pb-10">
+          <div className="flex max-w-3xl flex-col gap-5 pb-20 max-sm:pb-10 md:gap-2">
             <p className="text-xl font-medium">
               Come dazzle the world with your creative mind. We&apos;ll give you
               the platform!
@@ -80,8 +82,8 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <section className="flex flex-col justify-center items-center">
-          <div className="flex justify-center gap-10 max-sm:gap-5 flex-wrap">
+        <section className="flex flex-col items-center justify-center">
+          <div className="flex flex-wrap justify-center gap-10 max-sm:gap-5">
             <OneBlock
               title="Learn"
               description={[
@@ -107,7 +109,7 @@ export default function Home() {
               textColor="text-gray-700"
             />
           </div>
-          <button className="bg-black outline-none rounded-xl text-white ptext-lg font-bold my-20 max-sm:my-5 max-sm:mt-10 py-3 px-5">
+          <button className="ptext-lg my-20 rounded-xl bg-black px-5 py-3 font-bold text-white outline-none max-sm:my-5 max-sm:mt-10">
             Register your interest NOW!
           </button>
         </section>
@@ -131,17 +133,22 @@ function OneBlock({
 }) {
   return (
     <div
-      className={`flex flex-col justify-center items-center rounded-[25px] text-center ${bgColor} h-[250px] w-[250px] max-sm:w-[300px] ${textColor ?? "text-white"
-        } ${title === "Share" ? "border-[0.5px] border-gray-300" : ""}`}
+      className={`flex flex-col items-center justify-center rounded-lg text-center md:rounded-[25px] ${bgColor} h-auto w-[90%] py-6 md:h-[250px] 2xl:w-[325px] md:w-[300px] md:py-0 md:max-sm:w-[300px] ${
+        textColor ?? "text-white"
+      } ${title === "Share" ? "border-[0.5px] border-gray-300" : ""}`}
     >
       <h2
-        className={`text-3xl pb-3 font-bold ${title === "Share" ? "text-[#D10000]" : ""
-          }`}
+        className={`pb-3 text-3xl font-bold ${
+          title === "Share" ? "text-[#D10000]" : ""
+        }`}
       >
         {title}
       </h2>
       {description.map((desc, index) => (
-        <p className="text-base w-[75%] leading-[120%] font-medium" key={index}>
+        <p
+          className="w-[90%] text-base font-medium leading-[120%] md:w-[75%]"
+          key={index}
+        >
           {desc}
         </p>
       ))}
