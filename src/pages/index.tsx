@@ -57,10 +57,10 @@ export default function Home() {
                     className={`} absolute right-0 top-10 w-[300px] overflow-scroll rounded-lg border-[1px] border-gray-100 bg-gray-50 p-4 text-left text-xs text-gray-600 transition-all duration-300
                 ease-in`}
                   >
-                    A specific date, along with other details will be confirmed
+                    A specific date, along with other details, will be confirmed
                     and shared with you later before registrations officially
                     open. <br /> <br /> In the meantime refer yourself to the
-                    FAQs or ping our support email and will answer all your
+                    FAQs or ping our support email, and we will answer all your
                     burning questions
                   </div>
                 )}
@@ -71,7 +71,7 @@ export default function Home() {
 
           <div className="flex max-w-3xl flex-col gap-5 pb-20 max-sm:pb-10 md:gap-2">
             <p className="text-xl font-medium">
-              Come dazzle the world with your creative mind. We&apos;ll give you
+              Dazzle the world with your creative mind. We&apos;ll give you
               the platform!
             </p>
             <p className="text-sm">
@@ -88,14 +88,14 @@ export default function Home() {
             <OneBlock
               title="Learn"
               description={[
-                "Attend and learn from workshops  series and speaker sessions",
+                "Attend and learn from targeted workshops series and speaker sessions,"
               ]}
               bgColor="bg-[#6F6F6F]"
             />
             <OneBlock
               title="Build"
               description={[
-                "Collaborate with your team to build unique products using state of the art technologies with ful support from our mentors and coaches",
+                "Collaborate with your team to build unique products using state-of-the-art technologies with full support from our mentors and coaches."
               ]}
               bgColor="bg-[#f6cccc]"
               textColor="text-gray-700"
@@ -104,7 +104,7 @@ export default function Home() {
               title="Share"
               description={[
                 "Demo your solutions and win special prizes from our sponsors and partners.",
-                "Explore possibilities for future opportunities with our sponsors at the Career Fair",
+                "Explore possibilities for future opportunities with our sponsors at the Career Fair."
               ]}
               bgColor="bg-[#ffffff]"
               textColor="text-gray-700"
