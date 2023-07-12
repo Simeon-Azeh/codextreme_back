@@ -88,7 +88,7 @@ export default function Home() {
             <OneBlock
               title="Learn"
               description={[
-                "Attend and learn from targeted workshops series and speaker sessions,"
+                "Attend and learn from targeted workshops series and speaker sessions."
               ]}
               bgColor="bg-[#6F6F6F]"
             />
