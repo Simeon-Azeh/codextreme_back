@@ -1,14 +1,15 @@
 import React from "react";
+import SectionStructure from "@/components/shared/sectionStructure";
 
 export default function Faq() {
   const data = [
     {
       question: "What is a hackathon?",
       answer: (
-        <Answer isFirst isLast={false}>
+        <Answer isFirst={true}>
           <p className="mb-2 text-gray-500">
             A hackathon is an invention marathon. Students come together to
-            build cool software & hardware hacks over 24-48 hours. It&apos;s{" "}
+            build cool software & hardware hacks over 24-48 hours [We are extending to 72 hours]. It&apos;s{" "}
             <a
               href="https://medium.com/tfogo/hackathons-are-for-beginners-77a9c9c0e000#.cj21niskl"
               target="_blank"
@@ -20,12 +21,11 @@ export default function Faq() {
           </p>
         </Answer>
       ),
-      height: "md:h-24 h-28",
     },
     {
       question: "Why CodeXtreme?",
       answer: (
-        <Answer isFirst={false} isLast={false}>
+        <Answer>
           <p className="mb-2 text-gray-500">
             Talent is everywhere, but opportunity isn&apos;t. An issue that has
             been apparent to our team over the years is that young people early
@@ -36,9 +36,7 @@ export default function Faq() {
             their limits and put in check their reality of what is possible with
             the power of modern technology. Due to this, a significant amount of
             talent goes untapped and dies young, never getting the chance to
-            emerge.
-          </p>
-          <p className="mb-2 text-gray-500">
+            emerge.<br /><br />
             After much consideration, we decided to bring to the community of
             developers something of value, a trailblazing event that they would
             look forward to every year and get together with like-minded people
@@ -51,50 +49,57 @@ export default function Faq() {
           </p>
         </Answer>
       ),
-      height: "md:h-48 h-[30rem]",
+    },
+    {
+      question: "What CodeXtreme Hackathon is.",
+      answer: (
+        <Answer>
+          <p className="mb-2 text-gray-500">
+            CodeXtreme is not a just a competition. It is a learning experience. It is a place where you can meet new people, learn new things, and build cool stuff.
+            It is a place for you to experiment and try new technologies. It is a place for you to challenge yourself and push yourself to become a better developer.
+            It is a place for you to have fun. It is a place for you to be you.<br /><br /> This is not a startup pitch. It is not a place for you to be judged. It is not a place for you to be afraid of failure.
+          </p>
+        </Answer>
+      ),
     },
     {
       question: "How much does it cost?",
       answer: (
-        <Answer isFirst={false} isLast={false}>
+        <Answer>
           <p className="mb-2 text-gray-500">
             Nothing. Attending a hackathon is free.
           </p>
         </Answer>
       ),
-      height: "h-24",
     },
     {
       question: "Do I need to be a student to attend?",
       answer: (
-        <Answer isFirst={false} isLast={false}>
+        <Answer>
           <p className="mb-2 text-gray-500">
             Yes. For this year&apos;s event only students who are currently
             enrolled in school/university/grad school or have graduated within
             the past 12 months from university or boot camps are eligible to
-            attend. Professionals can join us as mentors and coaches.
+            attend. Professionals can join us as mentors, coaches and speakers.
           </p>
         </Answer>
       ),
-      height: "md:h-24 h-48",
     },
     {
       question: "Where and when is the event?",
       answer: (
-        <Answer isFirst={false} isLast={false}>
+        <Answer>
           <p className="mb-2 text-gray-500">
-            This will be communicated once the venue is confirmed. Register your
-            interest for us to follow up with more information later. However
-            one thing is certain, the hackathon is in-person.
+            The hackathon is happening in-person in Kigali, Rwanda at the African Leadership University.
+            We are targeting the 3rd week of January 2024. The team will communicate on the exact dates.
           </p>
         </Answer>
       ),
-      height: "md:h-24 h-42",
     },
     {
       question: "Is there a code of conduct?",
       answer: (
-        <Answer isFirst={false} isLast={false}>
+        <Answer>
           <p className="mb-2 text-gray-500">
             Yes there is. We enforce it very strongly. You can{" "}
             <a
@@ -108,27 +113,68 @@ export default function Faq() {
           </p>
         </Answer>
       ),
-      height: "h-24",
+    },
+    {
+      question: "What is the theme for the Hackathon?",
+      answer: (
+        <Answer>
+          <p className="mb-2 text-gray-500">
+            There are no boxes at CodeXtreme. People can work on any type of solution in line with but not limited to the following <strong>{"'"}Challenges{"'"}</strong> and <strong>{"'"}Emerging Technologies{"'"}</strong><br /><br />
+          </p>
+          <ul className="list-disc ml-10 indent-3 text-gray-500">
+            <li>Climate Change</li>
+            <li>Education</li>
+            <li>Health Care</li>
+            <li>Crisis & Disasters</li>
+            <li>Responsible Production & Consumption</li>
+            <li>Logistics</li>
+            <li>Disposal & Recycling</li>
+            <li>Machine Learning and AI</li>
+            <li>AR/VR</li>
+            <li>Block Chain</li>
+            <li>Future of Finance</li>
+            <li>Industry & Commerce</li>
+            <li>Internet of Things</li>
+          </ul>
+        </Answer>
+      ),
+    },
+    {
+      question: "Can hackers stay overnight?",
+      answer: (
+        <Answer>
+          <p className="mb-2 text-gray-500">
+            Yes. There is an option to stay up/sleep over at the venue for those who want. Please note that we are not providing any ssleeping bags or linens.
+          </p>
+        </Answer>
+      ),
+    },
+    {
+      question: "What should I carry with me to the event?",
+      answer: (
+        <Answer>
+          <p className="mb-2 text-gray-500">
+            Carry your laptop, chargers. Sleeping bag and a change [Only if you plan on sleeping over]. We will provide you with food, drinks, and snacks.
+          </p>
+        </Answer>
+      ),
     },
     {
       question: "When should I check back for more?",
       answer: (
-        <Answer isFirst={false} isLast={true}>
+        <Answer isLast={true}>
           <p className="mb-2 text-gray-500">
-            We will send you an email when registrations are opened and our main
-            website is live.
+            We will send you an email when team registration is opened. Updates will also be posted on our discord channel.
           </p>
         </Answer>
       ),
-      height: "h-24",
     },
   ];
   return (
-    <section className="my-6 flex px-8 max-sm:px-0 flex-col gap-6">
-      <h2 className="text-center text-5xl font-semibold text-gray-700">FAQs</h2>
+    <SectionStructure title="FAQs" >
       <div className="">
         {data.map((fqObj, i) => (
-          <OneFaq
+          <QuestionAnswer
             key={i}
             {...fqObj}
             isFirst={i === 0}
@@ -136,22 +182,22 @@ export default function Faq() {
           />
         ))}
       </div>
-    </section>
+    </ SectionStructure >
   );
 }
 
-function OneFaq({
-  isFirst,
-  isLast,
+function QuestionAnswer({
+  isFirst = false,
+  isLast = false,
   question,
   answer,
-  height,
+  height = "h-auto",
 }: {
-  isFirst: boolean;
-  isLast: boolean;
+  isFirst?: boolean;
+  isLast?: boolean;
   question: string;
   answer: React.ReactNode;
-  height: string;
+  height?: string;
 }) {
   const [open, setOpen] = React.useState(false);
   return (
@@ -207,12 +253,12 @@ function OneFaq({
 
 function Answer({
   children,
-  isFirst,
-  isLast,
+  isFirst = false,
+  isLast = false,
 }: {
   children: React.ReactNode;
-  isFirst: boolean;
-  isLast: boolean;
+  isFirst?: boolean;
+  isLast?: boolean;
 }) {
   return (
     <div
