@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Caprasimo&family=Montserrat:wght@400;700;800&family=Space+Mono:wght@400;700&display=swap');
 
 /* global properties */
 *,
@@ -15,7 +16,7 @@ body {
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: none;
     -webkit-tap-highlight-color: transparent;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Space Mono", monospace;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     background-color: #fff;
