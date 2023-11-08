@@ -1,10 +1,12 @@
 import Head from "next/head";
 import React from "react";
 
+// https://res.cloudinary.com/blackhole-inc/image/upload/v1699479572/final-logo_lo3yqn.png
+
 export default function Header({
   title = "CodeXtreme",
   description = "InfinitLoop invites you to CodeXtreme, a 4-day Seasonal Hackathon to unleash your potential! Join our 2023-2024 season launch Now!",
-  image = "https://res.cloudinary.com/blackhole-inc/image/upload/v1688764605/logo-full-black_ntwzds.png",
+  image = "https://res.cloudinary.com/blackhole-inc/image/upload/v1699479572/logo_oghpx3.png",
 }) {
   return (
     <Head>
