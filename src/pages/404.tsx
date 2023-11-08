@@ -12,21 +12,15 @@ export default function Custom404() {
         <div className="absolute rotate-12 rounded bg-secondary px-2 text-sm text-white">
           Page Not Found
         </div>
-        <button className="mt-5">
-          <a className="group relative inline-block text-sm font-medium text-[#fff] focus:outline-none focus:ring active:text-[#fff]">
-            <span className="absolute inset-0 translate-x-0.5 translate-y-0.5 bg-secondary transition-transform group-hover:translate-x-0 group-hover:translate-y-0"></span>
-
-            <span className="relative block border border-current bg-[#1A2238] px-12 py-3 font-bold">
-              <button
-                onClick={() => {
-                  window.location.href = "/";
-                }}
-              >
-                Go Home
-              </button>
-            </span>
-          </a>
-        </button>
+        <span className="relative block border border-current bg-[#1A2238] px-12 py-3 font-bold">
+          <button
+            onClick={() => {
+              window.location.href = "/";
+            }}
+          >
+            Go Home
+          </button>
+        </span>
       </main>
     </>
   );
