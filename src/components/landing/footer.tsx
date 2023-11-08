@@ -22,46 +22,42 @@ export default function Footer() {
         <div className="mb-10">
           <h2 className="text-5xl font-bold py-5">Where we are going next.</h2>
           <p className="mb-2">If you are not based in Kigali but would love to invite CodeXtreme to your community next, please fill this form.</p>
-          <Link className="underline" href={"/"}>
+          <button data-tf-popup="tLydFLwx" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=Bring CodeXtreme to Your Community Next" data-tf-transitive-search-params data-tf-medium="snippet" className="underline">
             Bring CodeXtreme to your community {">>"}
-          </Link>
+          </button>
         </div>
         <div className="mb-20 max-sm:mb-0 flex max-sm:items-start flex-wrap items-start gap-24 max-md:gap-10 font-medium text-white">
           <FooterLinkSection title="CodeXtreme">
             <li>
-              <a href="#" className="underline">
+              <a href="https://docs.google.com/document/d/1BZpkVIujCwb86WPuMrXEJqIFjWvmcNMzJ-L_5wOVorw/edit?usp=sharing" className="underline">
                 Code of Conduct
               </a>
             </li>
             <li>
-              <a href="#" className="underline">
+              <a href="https://docs.google.com/document/d/1f_Szd9YnticiiOzirACW3kINDCm-T28UCpeJsFx0J6M/edit?usp=sharing" target="_blank" className="underline">
                 Judging Criteria
               </a>
             </li>
             <li>
-              <a href="#" className="underline">
+              <a href="#schedule" className="underline">
                 Official Schedule
               </a>
             </li>
             <li>
-              <a href="#" className="underline">
-                Become a Speaker
-              </a>
+              <button data-tf-popup="vx9aw0GA" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=Speaker Interest Form" data-tf-transitive-search-params data-tf-medium="snippet" className="underline">Become a Speaker</button>
             </li>
             <li>
-              <a href="#" className="underline">
-                Volunteer at CodeXtreme
-              </a>
+              <button data-tf-popup="hoSalhBm" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=Volunteer Interest Form" data-tf-transitive-search-params data-tf-medium="snippet" className="underline">Volunteer at CodeXtreme</button>
             </li>
           </FooterLinkSection>
           <FooterLinkSection title="For Sponsors">
             <li>
-              <a href="#" className="underline">
+              <a href="https://docs.google.com/document/d/1UfZi0pIw-WwxwZqijyVkVSudP1oPqjyLIG9SHWraVWk/edit?usp=sharing" target="_blank" className="underline">
                 The Event
               </a>
             </li>
             <li>
-              <a href="#" className="underline">
+              <a href="https://docs.google.com/document/d/1_Mge4BRXT9C-5ySNK3N1qMDxPHFgFm0xZ00DUv-SqRg/edit?usp=sharing" target="_blank" className="underline">
                 Perks & Packages
               </a>
             </li>
@@ -69,21 +65,21 @@ export default function Footer() {
           <FooterLinkSection title="Support">
             <li className="flex gap-2 flex-wrap">
               Email:{" "}
-              <a href="mailto:ping@codextreme.infinitloop.io" className="underline">
+              <a href="mailto:codextreme@infinitloop.io" className="underline">
                 codextreme@infinitloop.io
               </a>
             </li>
             <p className="flex gap-2">
               Phone:{" "}
-              <a href="#">
+              <span>
                 +250787104022
-              </a>
+              </span>
             </p>
             <p className="flex gap-2">
               Whatsapp:{" "}
-              <a href="#">
+              <span>
                 +250737026499
-              </a>
+              </span>
             </p>
           </FooterLinkSection>
           <FooterLinkSection title="Follow our Socials">

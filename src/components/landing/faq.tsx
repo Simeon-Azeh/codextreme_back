@@ -67,7 +67,7 @@ export default function Faq() {
       answer: (
         <Answer>
           <p className="mb-2 text-gray-500">
-            Nothing. Attending a hackathon is free.
+            Nothing. Attending the hackathon is free.
           </p>
         </Answer>
       ),
@@ -78,8 +78,8 @@ export default function Faq() {
         <Answer>
           <p className="mb-2 text-gray-500">
             Yes. For this year&apos;s event only students who are currently
-            enrolled in school/university/grad school or have graduated within
-            the past 12 months from university or boot camps are eligible to
+            enrolled in school/university/grad school/boot camp or have graduated within
+            the past 12 months from a university or a boot camp are eligible to
             attend. Professionals can join us as mentors, coaches and speakers.
           </p>
         </Answer>
@@ -91,7 +91,7 @@ export default function Faq() {
         <Answer>
           <p className="mb-2 text-gray-500">
             The hackathon is happening in-person in Kigali, Rwanda at the African Leadership University.
-            We are targeting the 3rd week of January 2024. The team will communicate on the exact dates.
+            The event will run in-person from Wednesday January 24th through Saturday January 27th 2024.
           </p>
         </Answer>
       ),
@@ -164,7 +164,7 @@ export default function Faq() {
       answer: (
         <Answer isLast={true}>
           <p className="mb-2 text-gray-500">
-            We will send you an email when team registration is opened. Updates will also be posted on our discord channel.
+            We will send you an email when teams registrations are opened. Updates will also be posted on our discord channel.
           </p>
         </Answer>
       ),
@@ -172,7 +172,7 @@ export default function Faq() {
   ];
   return (
     <SectionStructure title="FAQs" >
-      <div className="">
+      <div className="mt-10">
         {data.map((fqObj, i) => (
           <QuestionAnswer
             key={i}

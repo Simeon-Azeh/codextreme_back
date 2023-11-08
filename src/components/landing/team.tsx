@@ -4,54 +4,34 @@ import SectionStructure from "@/components/shared/sectionStructure";
 
 const teamMembers = [
     {
-        name: "Cedric Murairi",
-        description: "Lead Organizer",
-        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1688764605/logo-full-black_ntwzds.png",
+        name: "Cédric Murairi",
+        description: `Lead Organizer`,
+        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1699463836/codextreme-panel/cedric-murairi_meja70.jpg",
     },
     {
         name: "Marion Maina",
         description: "Operations",
-        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1688764605/logo-full-black_ntwzds.png",
+        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1699464140/codextreme-panel/marion_uqmygv.jpg",
     },
     {
-        name: "Cedric Murairi",
-        description: "Lead Organizer",
-        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1688764605/logo-full-black_ntwzds.png",
+        name: "Liplan Lekipising",
+        description: "Hacker Experience",
+        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1699464166/codextreme-panel/liplan_tbb2d7.jpg",
     },
     {
-        name: "Marion Maina",
-        description: "Operations",
-        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1688764605/logo-full-black_ntwzds.png",
+        name: "Mo K. Lumoo",
+        description: "Logistics & Finance",
+        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1699464191/codextreme-panel/mo_elu6nh.jpg",
     },
     {
-        name: "Cedric Murairi",
-        description: "Lead Organizer",
-        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1688764605/logo-full-black_ntwzds.png",
+        name: "Mike Kiplangat",
+        description: "Logistics",
+        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1699464116/codextreme-panel/mike_lhyfax.jpg",
     },
     {
-        name: "Marion Maina",
-        description: "Operations",
-        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1688764605/logo-full-black_ntwzds.png",
-    },
-    {
-        name: "Cedric Murairi",
-        description: "Lead Organizer",
-        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1688764605/logo-full-black_ntwzds.png",
-    },
-    {
-        name: "Marion Maina",
-        description: "Operations",
-        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1688764605/logo-full-black_ntwzds.png",
-    },
-    {
-        name: "Cedric Murairi",
-        description: "Lead Organizer",
-        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1688764605/logo-full-black_ntwzds.png",
-    },
-    {
-        name: "Marion Maina",
-        description: "Operations",
-        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1688764605/logo-full-black_ntwzds.png",
+        name: "Harriet Mwanza",
+        description: "Marketing & Comms",
+        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1699464180/codextreme-panel/harriet_bjtdte.jpg",
     },
 ];
 
@@ -60,7 +40,7 @@ export default function Team() {
     const [showMore, setShowMore] = React.useState(false);
     return (
         <SectionStructure title="The Team" isCentered={true} >
-            <div className="flex flex-wrap gap-20 justify-center items-center">
+            <div className="flex flex-wrap gap-20 justify-center items-center mt-20">
                 {initialTeamMembers.map((member, index) => {
                     return <TeamMemberCard key={index} name={member.name} description={member.description} image={member.image} />;
                 })}
@@ -78,12 +58,12 @@ function TeamMemberCard({ name, description, image }: { name: string, descriptio
     return (
         <div onClick={() => {
             console.log("clicked");
-        }} className="cursor-pointer h-fit align-middle w-fit">
+        }} className="cursor-pointer h-fit align-middle w-fit flex flex-col justify-center items-center">
             <div className="mb-3">
-                <Image className="rounded-full" src={image} alt={name + "'s photo"} width={150} height={150} />
+                <Image className="rounded-full" src={image} alt={name + "'s photo"} width={150} height={100} />
             </div>
             <div className="flex justify-center items-center flex-col">
-                <h3 className="pb-1">{name}</h3>
+                <h3 className="pb-1 font-semibold">{name}</h3>
                 <p>{description}</p>
             </div>
         </div>

@@ -84,7 +84,7 @@ export default function HeroSlider() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
-                className="ptext-lg rounded-xl bg-black px-5 py-3 my-5 font-bold text-white outline-none max-sm:my-5 max-sm:mt-10"
+                className="ptext-lg rounded-3xl bg-black px-10 py-4 my-5 font-bold text-white outline-none max-sm:my-5 max-sm:mt-10"
             >
                 Register your interest NOW!
             </motion.button>
@@ -114,7 +114,7 @@ function OneBlock({
                 {title}
             </h2>
             <p
-                className={`flex items-center justify-center text-base w-[50%] px-5 font-medium leading-[120%] ${bgColor} h-[100px] rounded-2xl`}
+                className={`overflow-hidden flex flex-row flex-wrap items-center justify-center text-base max-xl:w-full w-[50%] px-5 font-medium leading-[120%] ${bgColor} h-[100px] rounded-2xl`}
             >
                 {description}
             </p>
