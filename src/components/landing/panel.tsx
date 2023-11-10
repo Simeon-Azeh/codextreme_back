@@ -4,9 +4,9 @@ import SectionStructure from "../shared/sectionStructure";
 
 const speakers = [
     {
-        name: "",
-        description: "",
-        image: "",
+        name: "Benson Murimi Wachira",
+        description: "Sr DevOps Eng at Irembo",
+        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1699606580/codextreme-panel/benson_ytuf9t.jpg",
     }
 ];
 
