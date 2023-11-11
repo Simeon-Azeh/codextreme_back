@@ -81,7 +81,7 @@ export default function Tracks() {
     return (
         <SectionStructure title="Tracks" isCentered={true} >
             <p className="mt-5 text-xl">
-                Our event let&apos;s you loose and give you the chance to work on what you find meaningful and interesting--there are no boxes here. You can work ony type of solution in ling with but not limited to the current <strong>&ldquo;Global Challenges&rdquo;</strong> and <strong>&ldquo;Emerging Technologies&rdquo;</strong>.
+                Our event let&apos;s you loose and give you the chance to work on what you find meaningful and interesting--there are no boxes here. You can work on any type of solution in line with but not limited to the current <strong>&ldquo;Global Challenges&rdquo;</strong> and <strong>&ldquo;Emerging Technologies&rdquo;</strong>.
             </p>
             <div className="flex flex-row flex-wrap gap-20 max-xl:gap-10 justify-center items-center mt-10">
                 {initialTracks.map((track, index) => {
