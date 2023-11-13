@@ -3,10 +3,11 @@ import React from "react";
 export default function EventDetails() {
     return (
         <div className="mt-16 gap-10 w-full justify-between text-xl">
-            <h2 className="py-5 text-5xl font-bold">Why you should join</h2>
+            <h2 className="py-10 text-5xl font-bold">Why you should join</h2>
             <ul className="list-disc ml-10">
                 <li className="text-xl py-3"><strong>4 days learning</strong> from the best in the industry.</li>
                 <li className="text-xl py-3">CodeXtreme is where “The Rubber Meets The Road”.</li>
+                <li className="text-xl py-3">We provide an environment for underserved groups in tech to thrive <strong>[Women, Refugees, Low-Income People, People with Disabilities, etc]</strong></li>
                 <li className="text-xl py-3"><strong>Brainstorming and Ideation</strong> sessions to set you on the right path to your solution.</li>
                 <li className="text-xl py-3"><strong>Learn</strong> from targeted worshops and speaker sessions.</li>
                 <li className="text-xl py-3"><strong>Build</strong> your solution with support fom our <strong>Mentors</strong>.</li>
