@@ -39,9 +39,9 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="#schedule" className="underline">
+              <Link href="/#schedule" className="underline">
                 Official Schedule
-              </a>
+              </Link>
             </li>
             <li>
               <button data-tf-popup="vx9aw0GA" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=Speaker Interest Form" data-tf-transitive-search-params data-tf-medium="snippet" className="underline">Become a Speaker</button>
@@ -52,9 +52,9 @@ export default function Footer() {
           </FooterLinkSection>
           <FooterLinkSection title="For Sponsors">
             <li>
-              <a href="https://docs.google.com/document/d/1UfZi0pIw-WwxwZqijyVkVSudP1oPqjyLIG9SHWraVWk/edit?usp=sharing" target="_blank" className="underline">
-                The Event
-              </a>
+              <Link href="/about-us#why-sponsor" className="underline">
+                Why Sponsor?
+              </Link>
             </li>
             <li>
               <a href="https://docs.google.com/document/d/1_Mge4BRXT9C-5ySNK3N1qMDxPHFgFm0xZ00DUv-SqRg/edit?usp=sharing" target="_blank" className="underline">
@@ -89,15 +89,15 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              LinkedIn | <a href="#" className="underline">
+              LinkedIn | <a href="linkedin.com/company/codextreme" className="underline">
                 CodeXtreme
               </a>
             </li>
-            <li>
+            {/* <li>
               Instagram | <a href="#" className="underline">
                 @CodeXtreme
               </a>
-            </li>
+            </li> */}
           </FooterLinkSection>
         </div>
         <p className="py-10 text-xs text-gray-600 sm:text-center">

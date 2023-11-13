@@ -11,8 +11,8 @@ export default function PageLayout({ children }: { children: React.ReactNode }) 
                 <Link className="text-4xl tracking-widest" href="/">
                     <Image src={Logo} width={400} alt="logo" />
                 </Link>
-                <Link className="underline text-base" href="/about-us">About Us</Link>
-                <div className="flex justify-end gap-2 text-base max-sm:justify-center max-sm:flex-col max-xl:pt-10 md:gap-5">
+                <Link className="border border-gray-200 rounded-3xl px-10 py-3 max-xl:mt-10" href="/about-us">About Us</Link>
+                <div className="flex justify-end gap-2 text-base max-sm:justify-center max-sm:flex-col max-xl:pt-5 md:gap-5">
                     <button data-tf-popup="SoW8aCjT" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=Sponsorship Interest Form" data-tf-transitive-search-params data-tf-medium="snippet" className="border border-gray-200 rounded-3xl px-10 py-3">Become a Sponsor</button>
                     <button data-tf-popup="mqo9BHQ6" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=Mentor Interest Form" data-tf-transitive-search-params data-tf-medium="snippet" className="border border-gray-200 rounded-3xl px-10 py-3">Become a Mentor/Coach</button>
                 </div>
