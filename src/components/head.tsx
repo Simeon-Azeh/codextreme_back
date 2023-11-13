@@ -7,7 +7,7 @@ export default function Header({
   title = "CodeXtreme",
   description = "InfinitLoop invites you to CodeXtreme, a 4-day Seasonal Hackathon to unleash your potential! Join our 2023-2024 season launch Now!",
   image = "https://res.cloudinary.com/blackhole-inc/image/upload/v1699479572/logo_oghpx3.png",
-}) {
+}: { title?: string, description?: string, image?: string }) {
   return (
     <Head>
       <title>{title}</title>

@@ -16,7 +16,7 @@ export default function HeroSlider() {
         {
             title: "BUILD",
             description: "Collaborate with your team to build unique products using state of the art technologies with full support from our mentors and coaches",
-            tagColor: "bg-[#d10000]",
+            tagColor: "bg-[#da1d36]",
             bgColor: "bg-[#fae5e5]",
         },
         {

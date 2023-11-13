@@ -2,35 +2,22 @@ import React from "react";
 
 export default function EventDetails() {
     return (
-        <>
-            <div className="mt-16 flex gap-10 flex-row max-xl:flex-col w-full justify-between text-xl">
-                <div>
-                    <h2 className="py-2 text-3xl font-bold">What is CodeXtreme?</h2>
-                    <p>
-                        CodeXtreme is a seasonal <strong>4 days Hackathon</strong> that brings together like-minded individuals from all walks of tech to <strong>solve problems</strong>, <strong>network</strong> with local and international <strong>tech experts</strong> and <strong>companies</strong>, <strong>win prizes</strong>, and create impact with their tech solutions.
-                    </p>
-                </div>
-                <div>
-                    <h2 className="py-2 text-3xl font-bold">Why should I join?</h2>
-                    <p>We give you the platform to learn from the best in the industry. CodeXtreme is where “The Rubber Meets The Road”. Come learn from other hackers, build solutions with support fom our mentors, win amazing prizes, network with companies at out <strong>Career Fair</strong> and share your experience with the rest of the world.</p>
-                </div>
-            </div>
-            <div className="w-[90%] m-auto">
-                <div className="flex flex-row justify-between gap-10 pt-20">
-                    <div>
-                        <h2 className="text-9xl max-xl:text-6xl max-sm:text-5xl font-bold">200+</h2>
-                        <p className="text-5xl max-xl:text-2xl max-sm:text-xl">Target Attendance</p>
-                    </div>
-                    <div>
-                        <h2 className="text-9xl max-xl:text-6xl max-sm:text-5xl font-bold text-[#e88080]">3 days</h2>
-                        <p className="text-5xl max-xl:text-2xl max-sm:text-xl">Intense learning and building.</p>
-                    </div>
-                </div>
-                <div className="pt-20">
-                    <h2 className="text-9xl max-xl:text-6xl max-sm:text-5xl font-bold text-[#6f6f6f]">1 full day</h2>
-                    <p className="text-5xl max-xl:text-2xl max-sm:text-xl">Career Fair with our sponsors.</p>
-                </div>
-            </div>
-        </>
+        <div className="mt-16 gap-10 w-full justify-between text-xl">
+            <h2 className="py-5 text-5xl font-bold">Why you should join</h2>
+            <ul className="list-disc ml-10">
+                <li className="text-xl py-3"><strong>4 days learning</strong> from the best in the industry.</li>
+                <li className="text-xl py-3">CodeXtreme is where “The Rubber Meets The Road”.</li>
+                <li className="text-xl py-3"><strong>Brainstorming and Ideation</strong> sessions to set you on the right path to your solution.</li>
+                <li className="text-xl py-3"><strong>Learn</strong> from targeted worshops and speaker sessions.</li>
+                <li className="text-xl py-3"><strong>Build</strong> your solution with support fom our <strong>Mentors</strong>.</li>
+                <li className="text-xl py-3">Win <strong>Amazing Prizes</strong>.</li>
+                <li className="text-xl py-3">Engage in Teams Game Activities and <strong>Win More Prizes</strong>.</li>
+                <li className="text-xl py-3"><strong>Network</strong> with our guests and companies at the <strong>Science Fair Expo</strong> and <strong>Career Fair.</strong>.</li>
+                <li className="text-xl py-3"><strong>Share</strong> your experience with the rest of the world.</li>
+                <li className="text-xl py-3">Always <strong>Free Food</strong> and <strong>Snacks</strong>.</li>
+                <li className="text-xl py-3">Our venue is opened for you to stay and <strong>Code Overnight</strong>.</li>
+                <li className="text-xl py-3">And of course<strong> Lots of Swaggs</strong>.</li>
+            </ul>
+        </div>
     );
 }

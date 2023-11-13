@@ -27,31 +27,13 @@ export default function Faq() {
       answer: (
         <Answer>
           <p className="mb-2 text-gray-500">
-            Talent is everywhere, but opportunity isn&apos;t. An issue that has
-            been apparent to our team over the years is that young people early
-            in their engineering journey or aspiring engineers lack the platform
-            and support to fully unleash their potential and solve pressing
-            problems in their communities with tech. They lack the support of a
-            community of like-minded individuals that would push them beyond
-            their limits and put in check their reality of what is possible with
-            the power of modern technology. Due to this, a significant amount of
-            talent goes untapped and dies young, never getting the chance to
-            emerge.<br /><br />
-            After much consideration, we decided to bring to the community of
-            developers something of value, a trailblazing event that they would
-            look forward to every year and get together with like-minded people
-            to solve problems, network with peers and companies, win prizes, and
-            change lives with their tech solutions. We call it CodeXtreme, a
-            one-week hackathon that brings together student developers, junior
-            developers, mentors, speakers, sponsors, and tech experts to learn
-            about tech, build unique products, and share their experiences with
-            the rest of the world.
+            Please read our story on our <a href="/about" className="text-blue-600 hover:underline">About Page</a>
           </p>
         </Answer>
       ),
     },
     {
-      question: "What CodeXtreme Hackathon is.",
+      question: "What CodeXtreme Hackathon is [and isn't].",
       answer: (
         <Answer>
           <p className="mb-2 text-gray-500">
@@ -164,7 +146,7 @@ export default function Faq() {
       answer: (
         <Answer isLast={true}>
           <p className="mb-2 text-gray-500">
-            We will send you an email when teams registrations are opened. Updates will also be posted on our discord channel.
+            We will send you an email when teams registrations are opened. Updates will also be posted on our discord channel and social media as they come in.
           </p>
         </Answer>
       ),
