@@ -16,10 +16,6 @@ const sponsors = [
         name: "African Leadership University",
         image: ALULogo,
     },
-    {
-        name: "ALX",
-        image: AlxLogo,
-    },
 ];
 
 const prospectiveSponsors = [
@@ -28,12 +24,8 @@ const prospectiveSponsors = [
         image: MCFLogo,
     },
     {
-        name: "BK Foundation",
-        image: BKFoundationLogo,
-    },
-    {
-        name: "BK",
-        image: BKLogo,
+        name: "ALX",
+        image: AlxLogo,
     },
     {
         name: "Rwanda Development Board",
