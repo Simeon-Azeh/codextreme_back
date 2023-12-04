@@ -89,9 +89,9 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              LinkedIn | <a href="linkedin.com/company/codextreme" className="underline">
+              LinkedIn | <Link href="linkedin.com/company/codextreme" className="underline">
                 CodeXtreme
-              </a>
+              </Link>
             </li>
             {/* <li>
               Instagram | <a href="#" className="underline">
