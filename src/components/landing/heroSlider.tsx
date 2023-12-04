@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function HeroSlider() {
     const [activeBlock, setActiveBlock] = useState(0);
+    const [toggleRegOpen, setToggleRegOpen] = useState(false);
 
     // Define the content for the three blocks
     const blocks = [
@@ -85,8 +86,11 @@ export default function HeroSlider() {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
                 className="ptext-lg rounded-3xl bg-black px-10 py-4 my-5 font-bold text-white outline-none max-sm:my-5 max-sm:mt-10"
+                onClick={() => {
+                    setToggleRegOpen(false);
+                }}
             >
-                Register your interest NOW!
+                {toggleRegOpen ? "Register your interest NOW!" : "Individual Registration !Open"}
             </motion.button>
         </section>
     );
