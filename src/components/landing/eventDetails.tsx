@@ -13,7 +13,7 @@ export default function EventDetails() {
                 <li className="text-xl py-3"><strong>Build</strong> your solution with support fom our <strong>Mentors</strong>.</li>
                 <li className="text-xl py-3">Win <strong>Amazing Prizes</strong>.</li>
                 <li className="text-xl py-3">Engage in Teams Game Activities and <strong>Win More Prizes</strong>.</li>
-                <li className="text-xl py-3"><strong>Network</strong> with our guests and companies at the <strong>Science Fair Expo</strong> and <strong>Career Fair.</strong>.</li>
+                <li className="text-xl py-3"><strong>Network</strong> with our guests and companies at the <strong>Solution Demo Expo</strong> and <strong>Career Fair.</strong>.</li>
                 <li className="text-xl py-3"><strong>Share</strong> your experience with the rest of the world.</li>
                 <li className="text-xl py-3">Always <strong>Free Food</strong> and <strong>Snacks</strong>.</li>
                 <li className="text-xl py-3">Our venue is opened for you to stay and <strong>Code Overnight</strong>.</li>

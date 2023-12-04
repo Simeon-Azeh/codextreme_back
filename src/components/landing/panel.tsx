@@ -4,6 +4,16 @@ import SectionStructure from "../shared/sectionStructure";
 
 const speakers = [
     {
+        name: "Rob Rickard",
+        description: "Founder of the RW Build",
+        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1701682567/rob_fcw12o.jpg"
+    },
+    {
+        name: "Jeremiah Chienda",
+        description: "Senior Software Engineer",
+        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1701682566/jeremiah_s70lsm.jpg"
+    },
+    {
         name: "Benson Murimi Wachira",
         description: "Sr DevOps Eng at Irembo",
         image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1699606580/codextreme-panel/benson_ytuf9t.jpg",
@@ -12,9 +22,9 @@ const speakers = [
 
 const judges = [
     {
-        name: "",
-        description: "",
-        image: "",
+        name: "Isaac Museveni",
+        description: "ALU CS Dep Lead",
+        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1701683664/isaac_ttfgft.jpg",
     }
 ];
 
@@ -29,6 +39,16 @@ const mentors = [
         description: "Associate SE at FINN",
         image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1699467204/codextreme-panel/fiona_vgknyg.jpg"
     },
+    {
+        name: "Kabiswa Davis",
+        description: "Software Engineer at Hence",
+        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1701684559/davis_bsrkyb.jpg"
+    },
+    {
+        name: "Amandine Karambizi",
+        description: "Software Engineer at Hence",
+        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1701684560/karambizi_jjxnoa.jpg"
+    },
 ];
 
 export default function Panel() {
@@ -40,19 +60,19 @@ export default function Panel() {
         <SectionStructure title="Panel" >
             <p className="mt-5 text-xl">We currently sourcing for speakers, Mentors and Judges. We will display them as we confirm and finalize with them.</p>
             <div className="flex flex-col justify-center items-center">
-                <p className="my-5 text-xl font-semibold">Speakers</p>
+                <p className="my-10 text-xl font-semibold">Speakers</p>
                 <div className="flex flex-row flex-wrap gap-20 justify-center items-center">
                     {speakers.map((speaker, index) => {
                         return <PanelMemberCard key={index} name={speaker.name} image={speaker.image} description={speaker.description} />;
                     })}
                 </div>
-                <p className="my-5 text-xl font-semibold">Judges</p>
+                <p className="my-10 text-xl font-semibold">Judges</p>
                 <div className="flex flex-row flex-wrap gap-20 justify-center items-center">
                     {judges.map((judge, index) => {
                         return <PanelMemberCard key={index} name={judge.name} image={judge.image} description={judge.description} />;
                     })}
                 </div>
-                <p className="my-5 text-xl font-semibold">Mentors/Coaches</p>
+                <p className="my-10 text-xl font-semibold">Mentors/Coaches</p>
                 <div className="flex flex-row flex-wrap gap-20 justify-center items-center">
                     {mentors.map((mentor, index) => {
                         return <PanelMemberCard key={index} name={mentor.name} image={mentor.image} description={mentor.description} />;
