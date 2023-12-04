@@ -10,6 +10,9 @@ import MCFLogo from "@/assets/svgs/mcf-logo 1.svg";
 import IremboLogo from "@/assets/svgs/irembo 1.svg";
 import GIZLogo from "@/assets/svgs/giz 1.svg";
 import MinICTLogo from "@/assets/svgs/min-ict 1.svg";
+import MTNLogo from "@/assets/svgs/mtn-logo 1.svg";
+import CcHUBLogo from "@/assets/CCHUB-logo.png";
+import StrAfricaLogo from "@/assets/svgs/strafrica-logo.svg";
 
 const sponsors = [
     {
@@ -39,11 +42,25 @@ const prospectiveSponsors = [
         name: "Ministry of ICT and Innovation",
         image: MinICTLogo,
     },
+    {
+        name: "StrAfrica",
+        image: StrAfricaLogo,
+    },
+    {
+        name: "MTN Rwanda",
+        image: MTNLogo,
+    },
+    // {
+    //     name: "CcHUB",
+    //     Image: CcHUBLogo,
+    // },
 ];
 
 export default function Sponsors() {
     const [initialSponsors, setInitialSponsors] = React.useState(sponsors.slice(0, 4));
-    const [showMore, setShowMore] = React.useState(false);
+    const [initialProspectiveSponsors, setInitialProspectiveSponsors] = React.useState(prospectiveSponsors.slice(0, 4));
+    const [showMoreSponsors, setShowMoreSponsors] = React.useState(false);
+    const [showMoreProspectiveSponsors, setShowMoreProspectiveSponsors] = React.useState(false);
 
     return (
         <>
@@ -54,23 +71,23 @@ export default function Sponsors() {
                     })}
                 </div>
                 <button className="font-bold underline text-xl text-gray-700" onClick={() => {
-                    showMore ? setInitialSponsors(sponsors.slice(0, 4)) :
+                    showMoreSponsors ? setInitialSponsors(sponsors.slice(0, 4)) :
                         setInitialSponsors(sponsors);
-                    setShowMore(!showMore);
-                }}>{!showMore ? "See more >>" : "See less <<"}</button>
+                    setShowMoreSponsors(!showMoreSponsors);
+                }}>{!showMoreSponsors ? "See more >>" : "See less <<"}</button>
             </SectionStructure>
             <SectionStructure title="Prospective Partners/Sponsors" >
                 <p className="mt-5 text-xl">We&apos;ll officially announce these sponsors/partners and more along with other companies joining our career fair as we finalize with them.</p>
                 <div className="flex flex-wrap gap-x-20 max-xl:gap-10 justify-center items-center">
-                    {prospectiveSponsors.map((sponsor, index) => {
+                    {initialProspectiveSponsors.map((sponsor, index) => {
                         return <SponsorCard key={index} name={sponsor.name} image={sponsor.image} />;
                     })}
                 </div>
-                {/* <button className="font-bold underline text-xl text-gray-700" onClick={() => {
-                    showMore ? setInitialSponsors(sponsors.slice(0, 4)) :
-                        setInitialSponsors(sponsors);
-                    setShowMore(!showMore);
-                }}>{!showMore ? "See more >>" : "See less <<"}</button> */}
+                <button className="font-bold underline text-xl text-gray-700" onClick={() => {
+                    showMoreProspectiveSponsors ? setInitialProspectiveSponsors(prospectiveSponsors.slice(0, 4)) :
+                        setInitialProspectiveSponsors(prospectiveSponsors);
+                    setShowMoreProspectiveSponsors(!showMoreProspectiveSponsors);
+                }}>{!showMoreProspectiveSponsors ? "See more >>" : "See less <<"}</button>
             </SectionStructure>
         </>
     );
@@ -78,9 +95,7 @@ export default function Sponsors() {
 
 function SponsorCard({ name, image }: { name: string, image: string }) {
     return (
-        <div onClick={() => {
-            window.open("https://www.google.com", "_blank");
-        }} className="cursor-pointer h-fit align-middle w-fit">
+        <div className="cursor-pointer h-fit align-middle w-fit">
             <Image className="rounded-md" src={image} alt={name + "'s photo"} width={200} height={50} />
         </div>
     );

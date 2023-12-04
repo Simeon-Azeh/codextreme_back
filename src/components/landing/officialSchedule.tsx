@@ -57,7 +57,7 @@ const schedules = [
         "Project Submission Closes [12:00 PM]",
         "Lunch [1:00 PM]",
         "Speaker Session [Panel Discussion][2:30 PM]",
-        "Science Fair Solutions Demo [First Round Judging & Networking With Honorable Guests][3:30 PM][2 hours]",
+        "Solutions Demo Expo [First Round Judging & Networking With Honorable Guests][3:30 PM][2 hours]",
         "Presentation of Top 6 Projects [5:30 PM][30 minutes]",
         "Judging Ends [6:00 PM]",
         "Prizes Announcement & Photobooth [6:30 PM]",

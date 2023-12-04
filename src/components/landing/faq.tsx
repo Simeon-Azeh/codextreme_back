@@ -68,6 +68,26 @@ export default function Faq() {
       ),
     },
     {
+      question: "I don't have an idea and/or team. Can I still attend?",
+      answer: (
+        <Answer>
+          <p className="mb-2 text-gray-500">
+            Yes. You will have time to find a team and idea to work on during the first day of the hackathon. Adequate support will be provided.
+          </p>
+        </Answer>
+      ),
+    },
+    {
+      question: "I don't know how to code. Can I still attend?",
+      answer: (
+        <Answer>
+          <p className="mb-2 text-gray-500">
+            Yes. We design our experience and setup environments for people you to thrive. Joing us to LEARN, BUILD and SHARE regardless of your skill level and formal background.
+          </p>
+        </Answer>
+      ),
+    },
+    {
       question: "Where and when is the event?",
       answer: (
         <Answer>
