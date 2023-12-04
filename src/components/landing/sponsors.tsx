@@ -17,27 +17,15 @@ const sponsors = [
         image: ALULogo,
     },
     {
-        name: "ALX",
-        image: AlxLogo,
+        name: "Rwanda Development Board",
+        image: RDBLogo,
     },
 ];
 
 const prospectiveSponsors = [
     {
-        name: "MasterCard Foundation",
-        image: MCFLogo,
-    },
-    {
-        name: "BK Foundation",
-        image: BKFoundationLogo,
-    },
-    {
-        name: "BK",
-        image: BKLogo,
-    },
-    {
-        name: "Rwanda Development Board",
-        image: RDBLogo,
+        name: "ALX",
+        image: AlxLogo,
     },
     {
         name: "Irembo",

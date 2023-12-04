@@ -65,8 +65,8 @@ export default function Footer() {
           <FooterLinkSection title="Support">
             <li className="flex gap-2 flex-wrap">
               Email:{" "}
-              <a href="mailto:codextreme@infinitloop.io" className="underline">
-                codextreme@infinitloop.io
+              <a href="mailto:c.murairi@alustudent.com" className="underline">
+                c.murairi@alustudent.com
               </a>
             </li>
             <p className="flex gap-2">
