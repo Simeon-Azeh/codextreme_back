@@ -83,6 +83,19 @@ export default function Footer() {
             </p>
           </FooterLinkSection>
           <FooterLinkSection title="Follow our Socials">
+<<<<<<< HEAD
+=======
+            <li>
+              Twitter | <a href="#" className="underline">
+                @CodeXtreme
+              </a>
+            </li>
+            <li>
+              LinkedIn | <Link href="linkedin.com/company/codextreme" className="underline">
+                CodeXtreme
+              </Link>
+            </li>
+>>>>>>> main
             {/* <li>
               Twitter | <a href="https://twitter.com/CodeXtreme" className="underline">
                 @CodeXtreme
