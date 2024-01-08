@@ -9,7 +9,7 @@ export default function EventDetails() {
                 <li className="text-xl py-3">CodeXtreme is where “The Rubber Meets The Road”.</li>
                 <li className="text-xl py-3">We provide an environment for underserved groups in tech to thrive <strong>[Women, Refugees, Low-Income People, People with Disabilities, etc]</strong></li>
                 <li className="text-xl py-3"><strong>Brainstorming and Ideation</strong> sessions to set you on the right path to your solution.</li>
-                <li className="text-xl py-3"><strong>Learn</strong> from targeted worshops and speaker sessions.</li>
+                <li className="text-xl py-3"><strong>Learn</strong> from targeted workshops and speaker sessions.</li>
                 <li className="text-xl py-3"><strong>Build</strong> your solution with support fom our <strong>Mentors</strong>.</li>
                 <li className="text-xl py-3">Win <strong>Amazing Prizes</strong>.</li>
                 <li className="text-xl py-3">Engage in Teams Game Activities and <strong>Win More Prizes</strong>.</li>

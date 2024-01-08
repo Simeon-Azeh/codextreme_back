@@ -12,6 +12,7 @@ import GIZLogo from "@/assets/svgs/giz 1.svg";
 import MinICTLogo from "@/assets/svgs/min-ict 1.svg";
 import MTNLogo from "@/assets/svgs/mtn-logo 1.svg";
 import CcHUBLogo from "@/assets/CCHUB-logo.png";
+import HenceLogo from "@/assets/svgs/hence.png";
 import StrAfricaLogo from "@/assets/svgs/strafrica-logo.svg";
 
 const sponsors = [
@@ -22,6 +23,14 @@ const sponsors = [
     {
         name: "Rwanda Development Board",
         image: RDBLogo,
+    },
+    {
+        name: "GIZ",
+        image: GIZLogo,
+    },
+    {
+        name: "Hence Technologies",
+        image: HenceLogo,
     },
 ];
 
@@ -35,10 +44,6 @@ const prospectiveSponsors = [
         image: IremboLogo,
     },
     {
-        name: "GIZ",
-        image: GIZLogo,
-    },
-    {
         name: "Ministry of ICT and Innovation",
         image: MinICTLogo,
     },
@@ -50,10 +55,6 @@ const prospectiveSponsors = [
         name: "MTN Rwanda",
         image: MTNLogo,
     },
-    // {
-    //     name: "CcHUB",
-    //     Image: CcHUBLogo,
-    // },
 ];
 
 export default function Sponsors() {
@@ -64,7 +65,7 @@ export default function Sponsors() {
 
     return (
         <>
-            <SectionStructure title="Our Sponsors" isCentered={true} >
+            <SectionStructure title="Our Sponsors|Partners" isCentered={true} >
                 <div className="flex flex-wrap gap-20 max-xl:gap-10 justify-center items-center mt-10">
                     {initialSponsors.map((sponsor, index) => {
                         return <SponsorCard key={index} name={sponsor.name} image={sponsor.image} />;
@@ -76,7 +77,7 @@ export default function Sponsors() {
                     setShowMoreSponsors(!showMoreSponsors);
                 }}>{!showMoreSponsors ? "See more >>" : "See less <<"}</button>
             </SectionStructure>
-            <SectionStructure title="Prospective Partners/Sponsors" >
+            <SectionStructure title="Prospective Partners|Sponsors" >
                 <p className="mt-5 text-xl">We&apos;ll officially announce these sponsors/partners and more along with other companies joining our career fair as we finalize with them.</p>
                 <div className="flex flex-wrap gap-x-20 max-xl:gap-10 justify-center items-center">
                     {initialProspectiveSponsors.map((sponsor, index) => {

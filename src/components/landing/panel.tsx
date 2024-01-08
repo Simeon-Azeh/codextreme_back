@@ -17,7 +17,12 @@ const speakers = [
         name: "Benson Murimi Wachira",
         description: "Sr DevOps Eng at Irembo",
         image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1699606580/codextreme-panel/benson_ytuf9t.jpg",
-    }
+    },
+    {
+        name: "Bello Moussa",
+        description: "TPM at Hello Tractor",
+        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1699460695/bello_sbtozp.jpg",
+    },
 ];
 
 const judges = [
@@ -25,13 +30,18 @@ const judges = [
         name: "Isaac Museveni",
         description: "ALU CS Dep Lead",
         image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1701683664/isaac_ttfgft.jpg",
-    }
+    },
+    {
+        name: "Jeremiah Chienda",
+        description: "Senior Software Engineer",
+        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1701682566/jeremiah_s70lsm.jpg"
+    },
 ];
 
 const mentors = [
     {
         name: "Bello Moussa",
-        description: "PM at Hello Tractor",
+        description: "TPM at Hello Tractor",
         image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1699460695/bello_sbtozp.jpg",
     },
     {
@@ -48,6 +58,11 @@ const mentors = [
         name: "Amandine Karambizi",
         description: "Software Engineer at Hence",
         image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1701684560/karambizi_jjxnoa.jpg"
+    },
+    {
+        name: "Jeremiah Chienda",
+        description: "Senior Software Engineer",
+        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1701682566/jeremiah_s70lsm.jpg"
     },
 ];
 
