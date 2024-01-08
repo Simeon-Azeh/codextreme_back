@@ -83,21 +83,16 @@ export default function Footer() {
             </p>
           </FooterLinkSection>
           <FooterLinkSection title="Follow our Socials">
-            <li>
-              Twitter | <a href="#" className="underline">
-                @CodeXtreme
-              </a>
-            </li>
-            <li>
-              LinkedIn | <a href="linkedin.com/company/codextreme" className="underline">
-                CodeXtreme
-              </a>
-            </li>
             {/* <li>
-              Instagram | <a href="#" className="underline">
+              Twitter | <a href="https://twitter.com/CodeXtreme" className="underline">
                 @CodeXtreme
               </a>
             </li> */}
+            <li>
+              LinkedIn | <Link href="https://linkedin.com/company/codextreme" target="_blank" className="underline">
+                CodeXtreme
+              </Link>
+            </li>
           </FooterLinkSection>
         </div>
         <p className="py-10 text-xs text-gray-600 sm:text-center">
