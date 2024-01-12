@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
+import Link from "next/link";
 
 import { motion } from 'framer-motion';
 
 export default function HeroSlider() {
     const [activeBlock, setActiveBlock] = useState(0);
-    const [toggleRegOpen, setToggleRegOpen] = useState(false);
 
-    // Define the content for the three blocks
     const blocks = [
         {
             title: "LEARN",
@@ -81,17 +80,13 @@ export default function HeroSlider() {
                     ></motion.div>
                 ))}
             </motion.div>
-            <motion.button
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
+            <Link
+                href={"https://dr0krcbe81m.typeform.com/to/YxTXmLWR"}
+                target="_blank"
                 className="ptext-lg rounded-3xl bg-black px-10 py-4 my-5 font-bold text-white outline-none max-sm:my-5 max-sm:mt-10"
-                onClick={() => {
-                    setToggleRegOpen(false);
-                }}
             >
-                {toggleRegOpen ? "Register your interest NOW!" : "Individual Registration !Open"}
-            </motion.button>
+                {"Register your interest NOW!"}
+            </Link>
         </section>
     );
 }
