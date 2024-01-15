@@ -19,7 +19,7 @@ const teamMembers = [
         image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1699464166/codextreme-panel/liplan_tbb2d7.jpg",
     },
     {
-        name: "Mo K. Lumoo",
+        name: "Mo Lumoo",
         description: "Logistics & Finance",
         image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1699464191/codextreme-panel/mo_elu6nh.jpg",
     },
