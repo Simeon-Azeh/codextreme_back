@@ -91,7 +91,7 @@ export default function Footer() {
           </FooterLinkSection>
         </div>
         <p className="py-10 text-xs text-gray-600 sm:text-center">
-          © 2023{" "}
+          © 2024{" "}
           <a href="https://flowbite.com/" className="hover:underline">
             CodeXtreme
           </a>
