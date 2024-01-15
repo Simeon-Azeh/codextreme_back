@@ -1,5 +1,5 @@
-# CodeExtreme Hackathon 2023
-Welcome to the CodeExtreme Hackathon 2023! This is the repository for the website of the hackathon.
+# CodeXtreme Hackathon 2023
+Welcome to the CodeExtreme Hackathon 2023! This is the repository for the hackathon website.
 
 ## Tools
 - [React](https://reactjs.org/)
