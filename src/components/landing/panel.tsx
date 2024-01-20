@@ -10,8 +10,13 @@ const speakers = [
     },
     {
         name: "Jeremiah Chienda",
-        description: "Senior Software Engineer",
+        description: "Mobile & AI Lead at Irembo",
         image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1701682566/jeremiah_s70lsm.jpg"
+    },
+    {
+        name: "Vicky Akaniwabo",
+        description: "Managing Director at Hence",
+        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1705673953/vicky_ckpsev.jpg"
     },
     {
         name: "Benson Murimi Wachira",
@@ -19,29 +24,69 @@ const speakers = [
         image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1699606580/codextreme-panel/benson_ytuf9t.jpg",
     },
     {
+        name: "Kabiswa Davis",
+        description: "Software Engineer at Hence",
+        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1701684559/davis_bsrkyb.jpg"
+    },
+    {
         name: "Bello Moussa",
-        description: "TPM at Hello Tractor",
+        description: "Engineering Manager at Hello Tractor",
         image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1699460695/bello_sbtozp.jpg",
+    },
+    {
+        name: "Arun Shanmuganathan",
+        description: "Co-Founder at Hence",
+        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1705673952/arun_p6g1uf.jpg"
     },
 ];
 
 const judges = [
     {
-        name: "Isaac Museveni",
-        description: "ALU CS Dep Lead",
-        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1701683664/isaac_ttfgft.jpg",
+        name: "Robert Wekesa",
+        description: "ALU Computer Science Faculty",
+        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1705745319/robert_yjyjey.jpg",
     },
     {
         name: "Jeremiah Chienda",
-        description: "Senior Software Engineer",
+        description: "Mobile & AI Lead at Irembo",
         image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1701682566/jeremiah_s70lsm.jpg"
+    },
+    {
+        name: "Mohamed Karsan",
+        description: "Student Venture Program at ALU",
+        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1705742742/mo-karsan-2_snuk5h.jpg"
+    },
+    {
+        name: "Michelle Uba",
+        description: "Program Manager at CcHUB",
+        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1705674400/michelle_dfc5ac.jpg"
+    },
+    {
+        name: "Bwiza Charlotte",
+        description: "Product Manager at Irembo",
+        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1705674400/bwiza_rxhgoj.jpg"
+    },
+    {
+        name: "Chance Iradukunda",
+        description: "SE at Africa Blockchain Institute",
+        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1705674400/chance_oxi03e.jpg",
+    },
+    {
+        name: "Dr. Geoffrey Andrew",
+        description: "Project Manager at CMU Africa",
+        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1705674400/geoffrey_i6vqh5.jpg"
+    },
+    {
+        name: "Pacifique Linda",
+        description: "Software Engineer at Hence",
+        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1705744158/pacifique-linda_oh5ryc.jpg"
     },
 ];
 
 const mentors = [
     {
         name: "Bello Moussa",
-        description: "TPM at Hello Tractor",
+        description: "Engineering Manager at Hello Tractor",
         image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1699460695/bello_sbtozp.jpg",
     },
     {
@@ -61,8 +106,13 @@ const mentors = [
     },
     {
         name: "Jeremiah Chienda",
-        description: "Senior Software Engineer",
+        description: "Mobile & AI Lead at Irembo",
         image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1701682566/jeremiah_s70lsm.jpg"
+    },
+    {
+        name: "Chance Iradukunda",
+        description: "SE at Africa Blockchain Institute",
+        image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1705674400/chance_oxi03e.jpg",
     },
 ];
 

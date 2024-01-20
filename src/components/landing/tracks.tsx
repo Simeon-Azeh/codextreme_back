@@ -45,11 +45,11 @@ const tracks = [
         image: LogisticIcon,
     },
     {
-        name: "Disposal & Recycling",
+        name: "Recycling",
         image: RecyclingIcon,
     },
     {
-        name: "Machine Learning and AI",
+        name: "ML and AI",
         image: MachineLearningIcon,
     },
     {
