@@ -11,7 +11,7 @@ import IremboLogo from "@/assets/svgs/irembo 1.svg";
 import GIZLogo from "@/assets/svgs/giz 1.svg";
 import MinICTLogo from "@/assets/svgs/min-ict 1.svg";
 import MTNLogo from "@/assets/svgs/mtn-logo 1.svg";
-import CcHUBLogo from "@/assets/CCHUB-logo.png";
+import CcHUBLogo from "@/assets/svgs/CCHUB-logo.svg";
 import HenceLogo from "@/assets/svgs/hence.png";
 import StrAfricaLogo from "@/assets/svgs/strafrica-logo.svg";
 
@@ -32,13 +32,13 @@ const sponsors = [
         name: "Hence Technologies",
         image: HenceLogo,
     },
+    {
+        name: "CcHUB",
+        Image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1705748391/CCHUB-logo_wuyuyz.png",
+    },
 ];
 
 const prospectiveSponsors = [
-    {
-        name: "ALX",
-        image: AlxLogo,
-    },
     {
         name: "Irembo",
         image: IremboLogo,
@@ -46,6 +46,10 @@ const prospectiveSponsors = [
     {
         name: "Ministry of ICT and Innovation",
         image: MinICTLogo,
+    },
+    {
+        name: "BK Foundation",
+        image: BKFoundationLogo,
     },
     {
         name: "StrAfrica",
@@ -67,7 +71,7 @@ export default function Sponsors() {
         <>
             <SectionStructure title="Our Sponsors|Partners" isCentered={true} >
                 <div className="flex flex-wrap gap-20 max-xl:gap-10 justify-center items-center mt-10">
-                    {initialSponsors.map((sponsor, index) => {
+                    {sponsors.map((sponsor, index) => {
                         return <SponsorCard key={index} name={sponsor.name} image={sponsor.image} />;
                     })}
                 </div>
@@ -80,7 +84,7 @@ export default function Sponsors() {
             <SectionStructure title="Prospective Partners|Sponsors" >
                 <p className="mt-5 text-xl">We&apos;ll officially announce these sponsors/partners and more along with other companies joining our career fair as we finalize with them.</p>
                 <div className="flex flex-wrap gap-x-20 max-xl:gap-10 justify-center items-center">
-                    {initialProspectiveSponsors.map((sponsor, index) => {
+                    {prospectiveSponsors.map((sponsor, index) => {
                         return <SponsorCard key={index} name={sponsor.name} image={sponsor.image} />;
                     })}
                 </div>
@@ -97,7 +101,7 @@ export default function Sponsors() {
 function SponsorCard({ name, image }: { name: string, image: string }) {
     return (
         <div className="cursor-pointer h-fit align-middle w-fit">
-            <Image className="rounded-md" src={image} alt={name + "'s photo"} width={200} height={50} />
+            <Image src={image} alt={name + "'s photo"} width={200} height={50} />
         </div>
     );
 }
