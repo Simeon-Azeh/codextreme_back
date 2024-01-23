@@ -99,7 +99,6 @@ export default function Sponsors() {
 }
 
 function SponsorCard({ name, image }: { name: string, image: string }) {
-    console.log("image", image)
     return (
         <div className="cursor-pointer h-fit align-middle w-fit">
             <Image src={image} alt={name + "'s photo"} width={200} height={50} />

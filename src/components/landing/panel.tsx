@@ -164,7 +164,7 @@ export default function Panel() {
 function PanelMemberCard({ name, description, image }: { name: string, description: string, image: string }) {
     return (
         <div onClick={() => {
-            console.log("clicked");
+            console.log("");
         }} className="cursor-pointer h-fit align-middle w-fit">
             <div className="mb-3 flex justify-center items-center">
                 <Image className="rounded-full" src={image} alt={name} width={150} height={150} />
