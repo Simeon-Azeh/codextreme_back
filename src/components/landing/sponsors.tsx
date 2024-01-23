@@ -34,7 +34,7 @@ const sponsors = [
     },
     {
         name: "CcHUB",
-        Image: CcHUBLogo,
+        Image: "/CCHUB-logo.png",
     },
 ];
 
