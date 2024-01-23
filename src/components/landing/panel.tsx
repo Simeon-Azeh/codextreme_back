@@ -122,7 +122,7 @@ export default function Panel() {
     const [initialJudges, setInitialJudges] = useState(judges.slice(0, 4));
     const [initialMentors, setInitialMentors] = useState(mentors.slice(0, 4));
     return (
-        <SectionStructure title="Panel" >
+        <SectionStructure title="Panel" id="panel">
             <p className="mt-5 text-xl">We currently sourcing for speakers, Mentors and Judges. We will display them as we confirm and finalize with them.</p>
             <div className="flex flex-col justify-center items-center">
                 <p className="my-10 text-xl font-semibold">Speakers</p>
