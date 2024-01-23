@@ -11,7 +11,7 @@ import IremboLogo from "@/assets/svgs/irembo 1.svg";
 import GIZLogo from "@/assets/svgs/giz 1.svg";
 import MinICTLogo from "@/assets/svgs/min-ict 1.svg";
 import MTNLogo from "@/assets/svgs/mtn-logo 1.svg";
-import CcHUBLogo from "@/assets/svgs/CCHUB-logo.svg";
+import CcHUBLogo from "@/assets/CCHUB-logo.png";
 import HenceLogo from "@/assets/svgs/hence.png";
 import StrAfricaLogo from "@/assets/svgs/strafrica-logo.svg";
 
@@ -34,7 +34,7 @@ const sponsors = [
     },
     {
         name: "CcHUB",
-        Image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1705748391/CCHUB-logo_wuyuyz.png",
+        Image: CcHUBLogo,
     },
 ];
 
