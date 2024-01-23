@@ -173,7 +173,7 @@ export default function Faq() {
     },
   ];
   return (
-    <SectionStructure title="FAQs" >
+    <SectionStructure title="FAQs" id="faqs">
       <div className="mt-10">
         {data.map((fqObj, i) => (
           <QuestionAnswer
