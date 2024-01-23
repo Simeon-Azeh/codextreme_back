@@ -57,7 +57,7 @@ export default function Team() {
 function TeamMemberCard({ name, description, image }: { name: string, description: string, image: string }) {
     return (
         <div onClick={() => {
-            console.log("clicked");
+            console.log("");
         }} className="cursor-pointer h-fit align-middle w-fit flex flex-col justify-center items-center">
             <div className="mb-3">
                 <Image className="rounded-full" src={image} alt={name + "'s photo"} width={150} height={100} />
