@@ -79,7 +79,7 @@ export default function Tracks() {
     const [showMore, setShowMore] = React.useState(false);
 
     return (
-        <SectionStructure title="Tracks" isCentered={true} >
+        <SectionStructure title="Tracks" isCentered={true} id="tracks" >
             <p className="mt-5 text-xl">
                 Our event lets you loose and allows you to work on what you find meaningful and interesting--there are no boxes here. You can work on any type of solution in line with but not limited to the current <strong>&ldquo;Global Challenges&rdquo;</strong> and <strong>&ldquo;Emerging Technologies&rdquo;</strong>.
             </p>
