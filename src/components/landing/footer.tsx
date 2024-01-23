@@ -17,7 +17,7 @@ function FooterLinkSection({ title, children }: FooterLinkSectionProps) {
 
 export default function Footer() {
   return (
-    <footer className="mt-20 shadow bg-black text-white">
+    <footer className="mt-20 shadow bg-black text-white" id="footer">
       <div className="m-auto w-[80%] pt-10 max-md:py-8 max-md:w-[85%]">
         <div className="mb-10">
           <h2 className="text-5xl font-bold py-5">Where we are going next.</h2>
