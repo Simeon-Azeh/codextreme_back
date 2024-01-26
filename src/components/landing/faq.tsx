@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import SectionStructure from "@/components/shared/sectionStructure";
 
 export default function Faq() {
@@ -27,7 +28,7 @@ export default function Faq() {
       answer: (
         <Answer>
           <p className="mb-2 text-gray-500">
-            Please read our story on our <a href="/about" className="text-blue-600 hover:underline">About Page</a>
+            Please read our story on our <Link href="/about-us" className="text-blue-600 hover:underline">About Page</Link>
           </p>
         </Answer>
       ),
