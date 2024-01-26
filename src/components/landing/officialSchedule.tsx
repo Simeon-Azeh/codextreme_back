@@ -52,7 +52,7 @@ const schedules = [
     ],
     [
         "Submission Opens [10:00 AM]",
-        "Buses Leaves [11:45 AM]",
+        "Buses Leave [11:45 AM]",
         "Project Submission Closes [12:00 PM]",
         "Lunch [1:00 PM]",
         "Speaker Session [Panel Discussion][2:30 PM]",
