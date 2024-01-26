@@ -51,10 +51,8 @@ const schedules = [
         "Hack Resumes [9:00 PM]",
     ],
     [
-        "Check-In [9:00 AM]",
-        "Breakfast [9:30 AM]",
         "Submission Opens [10:00 AM]",
-        "Career Fair Time [10:30 AM][2:30 hours]",
+        "Buses Leaves [11:45 AM]",
         "Project Submission Closes [12:00 PM]",
         "Lunch [1:00 PM]",
         "Speaker Session [Panel Discussion][2:30 PM]",
