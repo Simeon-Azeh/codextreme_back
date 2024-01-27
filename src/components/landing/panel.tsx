@@ -78,7 +78,7 @@ const judges = [
     },
     {
         name: "Pacifique Linda",
-        description: "Software Engineer at Hence",
+        description: "Software Designer at Hence",
         image: "https://res.cloudinary.com/blackhole-inc/image/upload/v1705744158/pacifique-linda_oh5ryc.jpg"
     },
 ];
