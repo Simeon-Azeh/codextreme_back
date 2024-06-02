@@ -1,22 +1,33 @@
 import React from "react";
 import Head from "@/components/head";
-import Faq from "@/components/landing/faq";
-import Team from "@/components/landing/team";
-import HeroSlider from "@/components/landing/heroSlider";
-import EventDetails from "@/components/landing/eventDetails";
-import Tracks from "@/components/landing/tracks";
-import Sponsors from "@/components/landing/sponsors";
-import OfficialSchedule from "@/components/landing/officialSchedule";
-import Panel from "@/components/landing/panel";
-import Prizes from "@/components/landing/prizes";
+// import Faq from "@/components/landing/faq";
+// import Team from "@/components/landing/team";
+// import HeroSlider from "@/components/landing/heroSlider";
+// import EventDetails from "@/components/landing/eventDetails";
+// import Tracks from "@/components/landing/tracks";
+// import Sponsors from "@/components/landing/sponsors";
+// import OfficialSchedule from "@/components/landing/officialSchedule";
+// import Panel from "@/components/landing/panel";
+// import Prizes from "@/components/landing/prizes";
+import Link from "next/link";
 import PageLayout from "@/components/shared/pageLayout";
+import { FaLinkedin } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
 
 export default function Home() {
   return (
     <>
       <Head />
       <PageLayout>
-        <main
+        <div className="m-auto h-[50vh] flex flex-col justify-center items-center gap-5 w-[80%] text-center">
+          <h1 className="w-fit text-2xl">Gearing up for major updates!</h1>
+          <p className="w-fit text-xl italic">Stay tuned!</p>
+          <div className="flex flex-row flex-wrap gap-2">
+            <Link href={"https://linkedin.com/company/codextreme"} target="_blank" className="flex items-center gap-2 w-fit bg-gray-100 py-2 px-4 rounded-lg border border-gray-200"><span><FaLinkedin /></span>Check us on LinkedIn</Link>
+            <Link href={"https://youtu.be/_XXBKf8Ch3k"} target="_blank" className="flex items-center gap-2 w-fit bg-gray-100 py-2 px-4 rounded-lg border border-gray-200"><span><FaYoutube /></span>Last event recap</Link>
+          </div>
+        </div>
+        {/* <main
           className={`m-auto min-h-screen w-full px-4 font-space-mono md:w-[80%] max-xl:w-[90%] md:p-0 text-gray-700 bg-gradient-to-b`}
         >
           <section className="mx-auto text-gray-700 mt-16 max-xl:mt-5">
@@ -43,7 +54,7 @@ export default function Home() {
           <Sponsors />
           <Team />
           <Faq />
-        </main>
+        </main> */}
       </PageLayout>
     </>
   );
