@@ -6,10 +6,10 @@ import Image from "next/image";
 import Logo from "@/assets/logo.png";
 import Footer from "@/components/landing/footer";
 
-import { usePathname } from 'next/navigation'
+// import { usePathname } from 'next/navigation's
 
 export default function PageLayout({ children }: { children: React.ReactNode }) {
-    const pathname = usePathname()
+    // const pathname = usePathname()
     return (
         <div className="relative">
             <header className="text-gray-700 m-auto flex items-center justify-between py-10 pt-14 max-xl:flex-col max-xl:justify-center max-xl:items-start max-xl:pb-0 w-[80%] max-xl:w-[85%]">
