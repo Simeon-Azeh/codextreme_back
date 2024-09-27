@@ -2,12 +2,7 @@
 // components/HeroCarousel.tsx
 import { Carousel } from 'antd';
 
-const contentStyle: React.CSSProperties = {
-    height: '400px',
-    color: '#000',
-   
 
-};
 
 const HeroCarousel = () => {
     return (
