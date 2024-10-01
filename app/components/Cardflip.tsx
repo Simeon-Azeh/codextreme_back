@@ -146,7 +146,7 @@ const CardFlipSection = () => {
     }, [visibleCards]);
 
     return (
-        <div className="w-full p-4 lg:w-[90%] mx-auto my-12 h-screen mt-[380px] md:mt-0">
+        <div className="w-full p-4 lg:w-[90%] mx-auto my-12  pt-72">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
                 {visibleCards.map((card, index) => (
                     <div

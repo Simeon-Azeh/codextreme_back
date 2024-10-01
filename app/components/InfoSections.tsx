@@ -6,7 +6,7 @@ import { MdArrowOutward } from "react-icons/md";
 
 const InfoSection = () => {
     return (
-        <div className="w-full p-4 lg:w-[90%] mx-auto my-12 h-screen mt-[380px] md:mt-[200px]">
+        <div className="w-full p-4 lg:w-[90%] mx-auto my-12 h-screen ">
             <h1 className='space-mono text-[40px] text-black font-semibold'>Does this sound like you?</h1>
             <p className='text-[20px] text-black'>Private, public, small, medium to large companies and organizations come to CodeXtreme when they need technical partners and a process they can count on.</p>
             <p className='text-[20px] text-black'>At the start of the conversation, they say things like these:</p>
@@ -44,9 +44,9 @@ const InfoSection = () => {
                </div>
                
             </div>
-            <div className='mt-6 flex space-x-4 pb-20'>
+            <div className='mt-6 flex space-x-4 pb-20 flex-col md:flex-row gap-4'>
                 <button className="px-4 py-2 text-white bg-gradient-to-r from-[#000000] to-[#666666] rounded font-medium hover:translate-y-[-5px] duration-150">Get a quote today</button>
-                <button className='border  px-4 text-black  rounded-md font-medium flex items-center gap-1'>Book a 20 minute consulting call <MdArrowOutward /></button>
+                <button className='border  px-4 text-black  rounded-md font-medium flex items-center gap-1 py-2 hover:translate-y-[-5px] duration-150'>Book a 20 minute consulting call <MdArrowOutward /></button>
             </div>
         </div>
     );
