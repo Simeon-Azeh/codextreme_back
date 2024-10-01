@@ -9,15 +9,15 @@ export default function Home() {
   return (
     <div className=" ">
       <div className="sticky top-0 z-50">
-      <Header />
+        <Header />
       </div>
-     <div className="w-full lg:w-[90%] mx-auto p-4 h-screen">
-    <HeroSection />
-     </div>
-     <div>
-      <CardFlipSection />
-     </div>
-     
+      <div className="w-full lg:w-[90%] mx-auto p-4 h-[100vh]  ">
+        <HeroSection />
+      </div>
+      <div className="h-[100vh] ">
+        <CardFlipSection />
+      </div>
+
     </div>
   );
 }
