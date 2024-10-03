@@ -29,7 +29,7 @@ const Card: React.FC<CardProps> = ({ title, description, iconSrc, iconBgColor, i
 // Main HeroSection component
 const HeroSection = () => {
     return (
-        <div className="  pt-24 md:pt-16 ">
+        <div className="  pt-6 md:pt-16 ">
             <h2 className="space-mono text-[18px] lg:text-[50px] text-[#000000]">
                 Innovating in Africa since 2024
             </h2>
