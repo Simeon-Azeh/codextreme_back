@@ -16,7 +16,7 @@ const Card: React.FC<CardProps> = ({ title, description, iconSrc, iconBgColor, i
         : `${iconBgColor || 'bg-gray-200'}`;
 
     return (
-        <div className="p-4 border border-gray-300 rounded-md bg-white hover:translate-y-[-5px] duration-150 cursor-pointer">
+        <div className="p-4 border border-gray-300 rounded-md bg-white hover:translate-y-[-5px] duration-150 cursor-pointer min-h-[100px] md:min-h-[200px]">
             <h3 className="text-lg font-semibold mb-2 space-mono text-[#000]">{title}</h3>
             <p className="mb-4 mont text-[#000]">{description}</p>
             <div className={`flex px-4 items-center h-20 w-full border rounded-md ${backgroundStyle}`}>
@@ -29,7 +29,7 @@ const Card: React.FC<CardProps> = ({ title, description, iconSrc, iconBgColor, i
 // Main HeroSection component
 const HeroSection = () => {
     return (
-        <div className="h-[100vh] justify-center flex  flex-col pt-64 md:pt-0">
+        <div className="  pt-24 md:pt-16 ">
             <h2 className="space-mono text-[18px] lg:text-[50px] text-[#000000]">
                 Innovating in Africa since 2024
             </h2>
