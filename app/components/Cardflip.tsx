@@ -88,12 +88,12 @@ const cardData: Card[] = [
 const Card: React.FC<Card> = ({ issue, title, description, linkText, backgroundImage, backgroundColor }) => {
     return (
         <div
-            className="relative p-4 border-gray-300 border-solid bg-white rounded-md hover:shadow-lg transition-shadow duration-300 flex flex-col justify-end"
+            className="relative p-4 border-gray-300 border-solid bg-white rounded-md hover:shadow-lg transition-shadow duration-300 flex flex-col justify-end min-h-[300px] md:min-h-[400px]"
             style={{
                 backgroundImage: backgroundImage ? `url(${backgroundImage})` : backgroundColor,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
-                height: '400px', // Set fixed height
+               
             }}
         >
             {/* Overlay */}
@@ -146,7 +146,7 @@ const CardFlipSection = () => {
     }, [visibleCards]);
 
     return (
-        <div className="w-full p-4 lg:w-[90%] mx-auto my-12  pt-72">
+        <div className="w-full p-4 lg:w-[90%] mx-auto my-12 pt-24 md:pt-0">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
                 {visibleCards.map((card, index) => (
                     <div

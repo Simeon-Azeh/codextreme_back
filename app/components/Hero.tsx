@@ -29,7 +29,7 @@ const Card: React.FC<CardProps> = ({ title, description, iconSrc, iconBgColor, i
 // Main HeroSection component
 const HeroSection = () => {
     return (
-        <div className="h-[100vh]">
+        <div className="h-[100vh] justify-center flex  flex-col pt-64 md:pt-0">
             <h2 className="space-mono text-[18px] lg:text-[50px] text-[#000000]">
                 Innovating in Africa since 2024
             </h2>
@@ -58,7 +58,7 @@ const HeroSection = () => {
                     title="Innovation"
                     description="Our teams work to deliver an A-grade-level solution to your technical problem."
                     iconSrc="/image3.png"
-                   iconBgColor="bg-gradient-to-r from-[#FFFFFF] to-[#999999]"
+                    iconBgColor="bg-gradient-to-r from-[#FFFFFF] to-[#999999]"
                 />
                 <Card
                     title="Impact"

@@ -6,7 +6,7 @@ import { MdArrowOutward } from "react-icons/md";
 
 const InfoSection = () => {
     return (
-        <div className="w-full p-4 lg:w-[90%] mx-auto my-12 h-screen ">
+        <div className="w-full p-4 lg:w-[90%] mx-auto ">
             <h1 className='space-mono text-[40px] text-black font-semibold'>Does this sound like you?</h1>
             <p className='text-[20px] text-black'>Private, public, small, medium to large companies and organizations come to CodeXtreme when they need technical partners and a process they can count on.</p>
             <p className='text-[20px] text-black'>At the start of the conversation, they say things like these:</p>

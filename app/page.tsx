@@ -12,7 +12,7 @@ export default function Home() {
       </div>
 
       {/* Hero Section */}
-      <div className="w-full lg:w-[90%] mx-auto p-4 min-h-screen"> {/* Changed from fixed height to min-h-screen */}
+      <div className="w-full lg:w-[90%] mx-auto px-4 min-h-[70vh] lg:min-h-screen"> {/* Changed from fixed height to min-h-screen */}
         <HeroSection />
       </div>
 

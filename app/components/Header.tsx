@@ -15,7 +15,7 @@ export default function Header() {
     const closeDrawer = () => setIsDrawerOpen(false);
 
     return (
-        <header className="bg-white px-4 py-6 flex justify-between items-center w-full lg:w-[90%] mx-auto">
+        <header className="bg-white px-4 py-4 flex justify-between items-center w-full lg:w-[90%] mx-auto">
             <div className="text-2xl font-bold ">
                 {/* Logo with Link to homepage */}
                 <Link href="/">
