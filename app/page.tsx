@@ -1,4 +1,5 @@
 import CardFlipSection from "./components/Cardflip";
+import EventSection from "./components/Events";
 import Header from "./components/Header"; // Adjust the import path if needed
 import HeroSection from "./components/Hero";
 import InfoSection from "./components/InfoSections";
@@ -24,6 +25,9 @@ export default function Home() {
       {/* Info Section */}
       <div className="w-full  mx-auto ">
         <InfoSection />
+      </div>
+      <div>
+        <EventSection />
       </div>
     </div>
   );
