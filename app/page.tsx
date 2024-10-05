@@ -4,7 +4,11 @@ import EventSection from "./components/Events";
 import Header from "./components/Header"; // Adjust the import path if needed
 import HeroSection from "./components/Hero";
 import InfoSection from "./components/InfoSections";
+import LatestSection from "./components/latest";
+import Newsletter from "./components/Newsletter";
 import Sponsors from "./components/Sponsors";
+import Testimonials from "./components/testimonial";
+import WhatToExpect from "./components/WhatToExpect";
 
 export default function Home() {
   return (
@@ -35,7 +39,19 @@ export default function Home() {
         <CompaniesPartners />
       </div>
       <div>
-        < Sponsors />
+        <Sponsors />
+      </div>
+      <div>
+    <Testimonials />
+      </div>
+      <div>
+        <LatestSection />
+      </div>
+      <div>
+        <Newsletter />
+      </div>
+      <div>
+        <WhatToExpect />
       </div>
     </div>
   );
