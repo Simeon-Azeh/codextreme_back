@@ -12,15 +12,13 @@ const Footer = () => {
                     <ul className="space-y-2">
                         <li><a href="#" className="hover:text-red-500">Manifesto 2.0</a></li>
                         <li><a href="#" className="hover:text-red-500">Team & Leadership</a></li>
-                        <li><a href="#" className="hover:text-red-500">Founder's Letters</a></li>
-                    
+                        <li><a href="#" className="hover:text-red-500">Founder&apos;s Letters</a></li>
                     </ul>
                     <h4 className="font-semibold text-lg my-4">Legal</h4>
                     <ul className="space-y-2">
                         <li><a href="#" className="hover:text-red-500">Privacy Policy</a></li>
                         <li><a href="#" className="hover:text-red-500">Terms of Services</a></li>
                     </ul>
-                
                 </div>
                 
                 {/* About Column */}
@@ -28,18 +26,15 @@ const Footer = () => {
                     <h4 className="font-semibold text-lg mb-4">About</h4>
                     <ul className="space-y-2">
                         <li><a href="#" className="hover:text-red-500">Our Story</a></li>
-                   
                     </ul>
                     <h4 className="font-semibold text-lg my-4">Address</h4>
                     <ul className="space-y-2">
                         <li><a href="#" className="hover:text-red-500">Remote First Kigali, Rwanda</a></li>
-                   
                     </ul>
                     <h4 className="font-semibold text-lg my-4">Contacts</h4>
                     <ul className="space-y-2">
                         <li><a href="#" className="hover:text-red-500">+25073702699</a></li>
                         <li><a href="#" className="hover:text-red-500">codextrem.global@gmail.com</a></li>
-                   
                     </ul>
                 </div>
                 
@@ -52,7 +47,6 @@ const Footer = () => {
                         <li><a href="#" className="hover:text-red-500">Submit a Problem Statement</a></li>
                         <h4 className="font-semibold text-lg my-4">Socials</h4>
                         <li className="flex space-x-4 mx-auto justify-center md:justify-start">
-                       
                             <a href="#" className="hover:text-red-500"><FaFacebook /></a>
                             <a href="#" className="hover:text-red-500"><FaTwitter /></a>
                             <a href="#" className="hover:text-red-500"><FaLinkedin /></a>
@@ -61,23 +55,20 @@ const Footer = () => {
                     </ul>
                 </div>
                 
-              
+                {/* Products & Services Column */}
                 <div>
-                    <h4 className="font-semibold text-lg mb-4">Products & Service</h4>
+                    <h4 className="font-semibold text-lg mb-4">Products & Services</h4>
                     <ul className="space-y-2">
                         <li><a href="#" className="hover:text-red-500">Trove</a></li>
                         <li><a href="#" className="hover:text-red-500">Hackathons</a></li>
                         <li><a href="#" className="hover:text-red-500">Buildathons</a></li>
                         <li><a href="#" className="hover:text-red-500">Summer of Code (soon)</a></li>
                         <li><a href="#" className="hover:text-red-500">Void Space (soon)</a></li>
-                     
-
                     </ul>
                     <h4 className="font-semibold text-lg my-4">Solutions</h4>
                     <ul className="space-y-2">
                         <li><a href="#" className="hover:text-red-500">Case Studies</a></li>
                         <li><a href="#" className="hover:text-red-500">Startups</a></li>
-                   
                     </ul>
                 </div>
             </div>
