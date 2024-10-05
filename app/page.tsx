@@ -7,6 +7,7 @@ import HeroSection from "./components/Hero";
 import InfoSection from "./components/InfoSections";
 import LatestSection from "./components/latest";
 import Newsletter from "./components/Newsletter";
+import ParallaxSection from "./components/Parralax";
 import Sponsors from "./components/Sponsors";
 import Testimonials from "./components/testimonial";
 import WhatToExpect from "./components/WhatToExpect";
@@ -47,6 +48,9 @@ export default function Home() {
       </div>
       <div>
         <LatestSection />
+      </div>
+      <div>
+      <ParallaxSection />
       </div>
       <div>
         <Newsletter />
