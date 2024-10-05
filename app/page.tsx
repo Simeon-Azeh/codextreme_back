@@ -1,6 +1,7 @@
 import CardFlipSection from "./components/Cardflip";
 import CompaniesPartners from "./components/CompaniesPartners";
 import EventSection from "./components/Events";
+import Footer from "./components/footer";
 import Header from "./components/Header"; // Adjust the import path if needed
 import HeroSection from "./components/Hero";
 import InfoSection from "./components/InfoSections";
@@ -52,6 +53,9 @@ export default function Home() {
       </div>
       <div>
         <WhatToExpect />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );

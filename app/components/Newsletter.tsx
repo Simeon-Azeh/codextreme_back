@@ -37,7 +37,7 @@ const Newsletter = () => {
                     />
                     <button
                         type="submit"
-                        className="flex items-center justify-center bg-red-500 text-white px-6 py-2 rounded-md hover:bg-red-700 transition-all duration-300"
+                        className="flex items-center justify-center bg-red-700 text-white px-6 py-2 rounded-md hover:bg-red-500 transition-all duration-300"
                     >
                         Subscribe <MdSend className="ml-2" />
                     </button>
